@@ -101,23 +101,23 @@ TERM1_WEEKS.push({
       number: 4,
       title: "Formative Assessment: HTML Structure & Text Formatting",
       duration: "60 min",
-      objective: "Demonstrate correct, independent use of HTML structure and text formatting tags for the week's graded formative assessment.",
-      warmup: "Quick review game: flash a tag on the screen, students say its purpose out loud (h1, p, strong, em, hr, br).",
+      objective: "Demonstrate correct, independent use of HTML document structure (Weeks 1-2) together with text formatting tags (Week 3) for the week's graded formative assessment.",
+      warmup: "Quick review game: flash a tag on the screen, students say its purpose out loud — mix structural tags from Weeks 1-2 (html, head, body) with this week's tags (h1, p, strong, em).",
       main: [
-        "Explain the formative assessment task and success criteria/rubric (shared in advance per the Academic Integrity & Assessment Policy).",
-        "Students complete the graded activity independently: build or extend a webpage section using correct document structure, headings, paragraphs, and text formatting.",
-        "Teacher circulates to observe and note evidence against the rubric (this activity is worth 10 points, Web Design Fundamentals standard).",
-        "Early finishers self-check their work against the success criteria checklist before submitting."
+        "Explain the formative assessment task and rubric (shared in advance per the Academic Integrity & Assessment Policy) — remind students this rubric checks their document structure from Weeks 1-2 as well as this week's text formatting.",
+        "Students complete the graded activity independently: build or extend a webpage section with a fully valid HTML structure (DOCTYPE, html, head, title, body, correct nesting) AND correct headings, paragraphs, and text formatting.",
+        "Teacher circulates to observe and note evidence against all three rubric categories — structure, formatting, and organization/readability (this activity is worth 10 points, Web Design Fundamentals standard).",
+        "Early finishers self-check their work against the success criteria checklist before submitting, double-checking their file still has a valid structure from earlier weeks."
       ],
       code: null,
-      task: "Complete and submit the 'HTML Structure & Text Formatting Activities' formative assessment (10 pts) via Toddle.",
+      task: "Complete and submit the 'HTML Structure & Text Formatting Activities' formative assessment (10 pts) via Toddle — the submitted page must have a valid HTML document structure (Weeks 1-2) as well as correct text formatting (Week 3).",
       successChecklist: [
+        "Valid HTML document structure carried over from Weeks 1-2 (correct DOCTYPE/html/head/body, no broken nesting).",
         "Use text formatting tags correctly.",
-        "Organize content logically.",
-        "Create readable webpages."
+        "Organize content logically and readably."
       ],
       exitTicket: "One-sentence reflection: 'What part of formatting text in HTML felt easiest, and what still feels tricky?'",
-      notes: "This is the official graded formative assessment from the syllabus (Week 3, 10 pts). Share the rubric before students begin, per the Academic Integrity Policy."
+      notes: "This is the official graded formative assessment from the syllabus (Week 3, 10 pts). It is cumulative — the rubric also checks Weeks 1-2 document-structure skills, not just this week's text formatting. Share the rubric before students begin, per the Academic Integrity Policy."
     }
   ]
 });

@@ -1,0 +1,43 @@
+GRADE PARA: Grade:		 9
+HEADER ROW: T1 WEEK: 1 — Introduction to HTML & Web Development (Aug 31) | Lesson 1: Essential Agreement & Year/Unit Overview | Lesson 2: Platform & Login Setup | Lesson 3: What Is HTML? Exploring the Web Around Us | Lesson 4: Building Your First HTML File
+
+--- ROW 1 (Standard(s):) ---
+  L1: 'N/A - Course & classroom orientation (content standards begin Lesson 3)'
+  L2: 'N/A - Technical/platform onboarding (content standards begin Lesson 3)'
+  L3: 'PG 4: Use systems thinking to describe networks and common software\nand hardware components. (Computing Systems & Networks, GLE\nCS.HS.2.3 - Computer software is written for specific purposes.)'
+  L4: 'PG 4: Use systems thinking to describe networks and common software\nand hardware components. (Computing Systems & Networks, GLE CS.HS.2.3)'
+--- ROW 4 (WALT (Learning Target):) ---
+  L1: 'To co-create classroom essential agreements and understand the full Design 1\nyear map, so I can make an informed elective choice and know what to\nexpect this term.'
+  L2: 'To successfully log into my laptop and every platform needed for\nDesign 1, so no future lesson is lost to tech troubleshooting.'
+  L3: 'To explain the purpose of HTML and identify the key\ncomponents of a webpage.'
+  L4: 'To create and save a basic HTML file independently,\napplying correct file-saving conventions.'
+--- ROW 5 (WILF (Success Criteria):) ---
+  L1: "- I can name at least 2 of the 3 terms' focus areas\n- I have helped shape the class essential agreements\n- I know the elective decision timeline"
+  L2: '- I am logged into my laptop, school network, and Toddle\n- I have a working code editor\n- My Hello World file is saved and opens in a browser'
+  L3: '- I can define HTML in my own words\n- I can identify at least 3 webpage components\n- I can explain why HTML matters for communication'
+  L4: '- My file is saved correctly as index.html\n- It displays correctly in a browser\n- It contains a title and at least one paragraph'
+--- ROW 6 (Targeted Vocabulary) ---
+  L1: 'None new this lesson (course orientation)'
+  L2: 'Code Editor - a program used to write/save code\nFile Extension - the letters after the dot in a filename'
+  L3: 'HTML, Browser, Tag, Element, Attribute, Website,\nWebpage - see Term 1 Vocabulary list for definitions'
+  L4: 'Syntax - the exact rules for writing code correctly'
+--- ROW 10 (Direct Instruction:
+I Do) ---
+  L1: 'Teacher introduces the Design 1 year map (3 terms)\nand the Grade 6-12 course pathway'
+  L2: 'Teacher demonstrates the full login/setup sequence\nstep by step (laptop, Toddle, editor, folders, Hello World)'
+  L3: 'Mini-lecture on what HTML is; live demo revealing HTML\nunderneath a real website via View Page Source'
+  L4: 'Teacher demos building a new HTML file with a title\nand personal-introduction paragraph'
+--- ROW 13 (Differentiated
+Instruction:
+Beginning / On /
+Above) ---
+  L1: 'Beginning: Sentence starters for the reflection; paired discussion first\nOn: Complete the reflection independently using the prompts\nAbove: Add a goal connecting this course to a future career/interest'
+  L2: 'Beginning: Printed checklist with screenshots; paired peer buddy\nOn: Follow the checklist independently, teacher spot-checks\nAbove:Explore one extra editor feature (theme/extension) if early'
+  L3: 'Beginning: Pre-taught vocabulary; worksheet with word bank + example\nOn: Complete the worksheet in pairs using new vocabulary\nAbove:Explain one extra concept spotted in View Page Source'
+  L4: 'Beginning: Sentence starters for the intro paragraph; worked example visible\nOn: Write an original introduction paragraph independently\nAbove:Add a second paragraph or heading before submitting'
+--- ROW 15 (Inclusion /
+EAL Support) ---
+  L1: '☑ Visual Supports\t☐ Extra Processing Time\n☑ Chunked Instructions\t☐ Text Read by TA/LSA\n☐ Reduced Language Load\t☐ Flexible Grouping\n☐ Model / Worked Example\t☐ Assistive Technology\n☐ Pre-teach Vocabulary\t☐ Movement / Sensory Break\n☐ TA/LSA Support\t☑ Scaffold / Sentence Starters\n☐ Other: '
+  L2: '☑ Visual Supports\t☐ Extra Processing Time\n☑ Chunked Instructions\t☐ Text Read by TA/LSA\n☐ Reduced Language Load\t☐ Flexible Grouping\n☐ Model / Worked Example\t☐ Assistive Technology\n☐ Pre-teach Vocabulary\t☐ Movement / Sensory Break\n☑ TA/LSA Support\t☐ Scaffold / Sentence Starters\n☐ Other: '
+  L3: '☑ Visual Supports\t☐ Extra Processing Time\n☐ Chunked Instructions\t☐ Text Read by TA/LSA\n☐ Reduced Language Load\t☐ Flexible Grouping\n☑ Model / Worked Example\t☐ Assistive Technology\n☑ Pre-teach Vocabulary\t☐ Movement / Sensory Break\n☐ TA/LSA Support\t☐ Scaffold / Sentence Starters\n☐ Other: '
+  L4: '☐ Visual Supports\t☑ Extra Processing Time\n☐ Chunked Instructions\t☐ Text Read by TA/LSA\n☐ Reduced Language Load\t☐ Flexible Grouping\n☑ Model / Worked Example\t☐ Assistive Technology\n☐ Pre-teach Vocabulary\t☐ Movement / Sensory Break\n☐ TA/LSA Support\t☑ Scaffold / Sentence Starters\n☐ Other: '

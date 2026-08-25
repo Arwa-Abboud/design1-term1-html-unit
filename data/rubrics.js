@@ -84,9 +84,9 @@ var RUBRICS = {
       title: "HTML Structure & Text Formatting Activities",
       points: 10,
       categories: [
-        { name: "Correct use of text formatting tags", points: 4, description: "Headings, paragraphs, <strong>, and <em> are used correctly and appropriately." },
-        { name: "Logical content organization", points: 3, description: "Content follows a clear heading hierarchy with no skipped or misused levels." },
-        { name: "Readability", points: 3, description: "The finished page is genuinely easier to read/skim than plain unformatted text." }
+        { name: "Valid HTML document structure (Weeks 1-2)", points: 3, description: "File is saved and named correctly; uses a valid DOCTYPE/html/head/body structure with correct nesting — carried over from Weeks 1-2, not just this week's new content." },
+        { name: "Correct use of text formatting tags (Week 3)", points: 4, description: "Headings, paragraphs, <strong>, and <em> are used correctly and appropriately." },
+        { name: "Logical organization & readability", points: 3, description: "Content follows a clear heading hierarchy with no skipped or misused levels, and the finished page is genuinely easier to read/skim than plain unformatted text." }
       ]
     },
     {
