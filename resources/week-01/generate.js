@@ -49,7 +49,7 @@ function bodyPara(text, opts = {}) {
   });
 }
 
-function tierBox(label, color, lines) {
+function tierBox(color, lines) {
   return new Table({
     width: { size: 100, type: WidthType.PERCENTAGE },
     borders: {
@@ -65,10 +65,6 @@ function tierBox(label, color, lines) {
             shading: { type: ShadingType.CLEAR, color: "auto", fill: GREY_FILL },
             margins: { top: 120, bottom: 120, left: 160, right: 160 },
             children: [
-              new Paragraph({
-                children: [new TextRun({ text: label, bold: true, size: 22, font: FONT, color })],
-                spacing: { after: 80 },
-              }),
               ...lines.map(l => new Paragraph({
                 children: [new TextRun({ text: l, size: 21, font: FONT })],
                 spacing: { after: 60 },
@@ -131,11 +127,9 @@ function differentiationDoc(subject, lessonLine, lessonTitle, filename, beginnin
       text: "FOR TEACHER USE — hand out only to students who need it, not the whole class",
       color: "555555",
     }),
-    bodyPara("Give the box below to students who need extra support with today's task.", { after: 80 }),
-    tierBox("Extra Support (Beginning)", RED, beginningLines),
+    tierBox(RED, beginningLines),
     spacer(300),
-    bodyPara("Give the box below to students who finish early or are ready for a challenge.", { after: 80 }),
-    tierBox("Extension (Above)", BLUE, aboveLines),
+    tierBox(BLUE, aboveLines),
   ];
   saveDoc(children, filename);
 }
