@@ -1,17 +1,16 @@
 const fs = require("fs");
 const {
-  Document, Packer, Paragraph, TextRun, HeadingLevel, Table, TableRow, TableCell,
-  WidthType, BorderStyle, ShadingType, AlignmentType, CheckBox
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  WidthType, BorderStyle, ShadingType
 } = require("docx");
 
 const FONT = "Times New Roman";
 const RED = "EE0000";
-const AMBER = "FFC000";
 const BLUE = "0070C0";
 const GREY_FILL = "F2F2F2";
 
-function titleBlock(subject, lessonLine, sheetTitle) {
-  return [
+function titleBlock(subject, lessonLine, sheetTitle, tag) {
+  const children = [
     new Paragraph({
       children: [new TextRun({ text: "Design 1 — " + subject, bold: true, size: 32, font: FONT })],
     }),
@@ -23,17 +22,24 @@ function titleBlock(subject, lessonLine, sheetTitle) {
       children: [new TextRun({ text: sheetTitle, bold: true, size: 26, font: FONT })],
       spacing: { after: 100 },
     }),
-    new Paragraph({
-      children: [
-        new TextRun({ text: "Name: ", bold: true, size: 22, font: FONT }),
-        new TextRun({ text: "_______________________________", size: 22, font: FONT }),
-        new TextRun({ text: "     Date: ", bold: true, size: 22, font: FONT }),
-        new TextRun({ text: "______________", size: 22, font: FONT }),
-      ],
-      spacing: { after: 200 },
-      border: { bottom: { style: BorderStyle.SINGLE, size: 4, color: "000000", space: 4 } },
-    }),
   ];
+  if (tag) {
+    children.push(new Paragraph({
+      children: [new TextRun({ text: tag.text, bold: true, size: 20, font: FONT, color: tag.color })],
+      spacing: { after: 100 },
+    }));
+  }
+  children.push(new Paragraph({
+    children: [
+      new TextRun({ text: "Name: ", bold: true, size: 22, font: FONT }),
+      new TextRun({ text: "_______________________________", size: 22, font: FONT }),
+      new TextRun({ text: "     Date: ", bold: true, size: 22, font: FONT }),
+      new TextRun({ text: "______________", size: 22, font: FONT }),
+    ],
+    spacing: { after: 200 },
+    border: { bottom: { style: BorderStyle.SINGLE, size: 4, color: "000000", space: 4 } },
+  }));
+  return children;
 }
 
 function bodyPara(text, opts = {}) {
@@ -106,56 +112,70 @@ function codeBlock(lines) {
 
 function checklistItem(text) {
   return new Paragraph({
-    children: [
-      new CheckBox({ checked: false }),
-      new TextRun({ text: "  " + text, size: 22, font: FONT }),
-    ],
+    children: [new TextRun({ text: "☐  " + text, size: 22, font: FONT })],
     spacing: { after: 100 },
   });
 }
 
 function saveDoc(children, filename) {
-  const doc = new Document({
-    sections: [{
-      properties: {},
-      children,
-    }],
-  });
+  const doc = new Document({ sections: [{ properties: {}, children }] });
   Packer.toBuffer(doc).then(buf => {
     fs.writeFileSync(filename, buf);
     console.log("Saved", filename);
   });
 }
 
-// ============ RESOURCE 1: Lesson 1 — About Me & My Goals Reflection ============
-{
+function differentiationDoc(subject, lessonLine, lessonTitle, filename, beginningLines, aboveLines) {
   const children = [
-    ...titleBlock("Term 1, Week 1, Lesson 1", "Essential Agreement & Year/Unit Overview", "About Me & My Goals for This Course"),
+    ...titleBlock(subject, lessonLine, lessonTitle + " — Differentiation Support", {
+      text: "FOR TEACHER USE — hand out only to students who need it, not the whole class",
+      color: "555555",
+    }),
+    bodyPara("Give the box below to students who need extra support with today's task.", { after: 80 }),
+    tierBox("Extra Support (Beginning)", RED, beginningLines),
+    spacer(300),
+    bodyPara("Give the box below to students who finish early or are ready for a challenge.", { after: 80 }),
+    tierBox("Extension (Above)", BLUE, aboveLines),
+  ];
+  saveDoc(children, filename);
+}
+
+// ============ LESSON 1 — About Me & My Goals Reflection ============
+{
+  const subject = "Term 1, Week 1, Lesson 1";
+  const lessonLine = "Essential Agreement & Year/Unit Overview";
+  const title = "About Me & My Goals for This Course";
+
+  saveDoc([
+    ...titleBlock(subject, lessonLine, title),
     bodyPara("Answer the questions below. There's no wrong answer here — this just helps your teacher get to know you as we start the year."),
     spacer(100),
     bodyPara("1. One thing I already know about computers or technology is..."),
-    spacer(400),
+    spacer(500),
     bodyPara("2. One thing I'm curious (or a little nervous) about this year is..."),
-    spacer(400),
+    spacer(500),
     bodyPara("3. This year, in Design 1, I want to learn how to..."),
-    spacer(400),
-    tierBox("Need a hand getting started? Try these sentence starters:", RED, [
+    spacer(500),
+  ], "W1L1 - About Me & Goals Reflection.docx");
+
+  differentiationDoc(subject, lessonLine, title, "W1L1 - About Me & Goals Reflection - Differentiation Support.docx",
+    [
       '"One thing I already know about technology is ____ because ____."',
       '"I\'m curious about ____ because I\'ve never ____."',
       '"This year I want to learn how to make/build ____ so that I can ____."',
-    ]),
-    spacer(200),
-    tierBox("Bonus (optional):", BLUE, [
-      "4. How could the skills you learn in Design 1 connect to a career or interest you already have?",
-    ]),
-  ];
-  saveDoc(children, "W1L1 - About Me & Goals Reflection.docx");
+    ],
+    ["4. Bonus: How could the skills you learn in Design 1 connect to a career or interest you already have?"]
+  );
 }
 
-// ============ RESOURCE 2: Lesson 2 — Platform & Login Setup Checklist ============
+// ============ LESSON 2 — Platform & Login Setup ============
 {
-  const children = [
-    ...titleBlock("Term 1, Week 1, Lesson 2", "Platform & Login Setup", "Getting Set Up — Step-by-Step Checklist"),
+  const subject = "Term 1, Week 1, Lesson 2";
+  const lessonLine = "Platform & Login Setup";
+  const title = "Getting Set Up — Step-by-Step Checklist";
+
+  saveDoc([
+    ...titleBlock(subject, lessonLine, title),
     bodyPara("Work through each step in order. Check the box once you've done it. Raise your hand if you get stuck on any step."),
     spacer(150),
     checklistItem("Step 1 — Log into your laptop"),
@@ -173,32 +193,27 @@ function saveDoc(children, filename) {
     bodyPara("Copy this code exactly into your index.html file:", { bold: true }),
     spacer(80),
     codeBlock([
-      "<!DOCTYPE html>",
-      "<html>",
-      "<head>",
-      "  <title>My First Page</title>",
-      "</head>",
-      "<body>",
-      "  <p>Hello, World!</p>",
-      "</body>",
-      "</html>",
+      "<!DOCTYPE html>", "<html>", "<head>", "  <title>My First Page</title>",
+      "</head>", "<body>", "  <p>Hello, World!</p>", "</body>", "</html>",
     ]),
-    spacer(200),
-    tierBox("Extra support:", RED, [
-      "Ask a partner or your teacher to check off each step with you before moving to the next one.",
+  ], "W1L2 - Platform Setup Checklist.docx");
+
+  differentiationDoc(subject, lessonLine, title, "W1L2 - Platform Setup Checklist - Differentiation Support.docx",
+    [
+      "Work through the checklist with a partner or teacher/TA, checking off each step together before moving to the next one.",
       "[Teacher note: attach a screenshot of your school's actual Toddle login screen and VS Code window here for a fully visual version of this checklist.]",
-    ]),
-    spacer(200),
-    tierBox("Finished early? Try this:", BLUE, [
-      "Explore one extra feature of your code editor (for example, change the color theme, or look at what an \"extension\" is) before we move on.",
-    ]),
-  ];
-  saveDoc(children, "W1L2 - Platform Setup Checklist.docx");
+    ],
+    ["Explore one extra feature of your code editor (for example, change the color theme, or look at what an \"extension\" is) before we move on."]
+  );
 }
 
-// ============ RESOURCE 3: Lesson 3 — Website Anatomy Worksheet ============
+// ============ LESSON 3 — Website Anatomy Worksheet ============
 {
+  const subject = "Term 1, Week 1, Lesson 3";
+  const lessonLine = "What Is HTML? Exploring the Web Around Us";
+  const title = "Website Anatomy Worksheet";
   const wordBank = "Word Bank: Header · Navigation · Main Content · Footer · Image · Link";
+
   function siteBlock(n) {
     return [
       bodyPara("Website " + n + ": ______________________________ (write the site name or address)", { bold: true, after: 80 }),
@@ -212,54 +227,55 @@ function saveDoc(children, filename) {
       spacer(180),
     ];
   }
-  const children = [
-    ...titleBlock("Term 1, Week 1, Lesson 3", "What Is HTML? Exploring the Web Around Us", "Website Anatomy Worksheet"),
+
+  saveDoc([
+    ...titleBlock(subject, lessonLine, title),
     bodyPara("With a partner, open two real websites in your browser. For each one, find and describe the parts listed below."),
     bodyPara(wordBank, { bold: true, after: 150 }),
     ...siteBlock(1),
     ...siteBlock(2),
-    tierBox("Worked example (Website: wikipedia.org):", RED, [
+  ], "W1L3 - Website Anatomy Worksheet.docx");
+
+  differentiationDoc(subject, lessonLine, title, "W1L3 - Website Anatomy Worksheet - Differentiation Support.docx",
+    [
+      "Worked example (Website: wikipedia.org):",
       "Header — The Wikipedia logo and the search bar at the top.",
       "Navigation — The menu links like \"Main page\", \"Contents\", \"Random article\" on the left side.",
       "Main Content — The article text, headings, and images in the middle of the page.",
       "Footer — Links about Wikipedia, privacy policy, and terms of use at the very bottom.",
-    ]),
-    spacer(200),
-    tierBox("Bonus (optional):", BLUE, [
-      "Right-click one of your websites and choose \"View Page Source\" or \"Inspect\". Find and write down ONE piece of HTML you didn't expect to see (for example, a comment, or a tag you don't recognize).",
-    ]),
-  ];
-  saveDoc(children, "W1L3 - Website Anatomy Worksheet.docx");
+    ],
+    ["Right-click one of your websites and choose \"View Page Source\" or \"Inspect\". Find and write down ONE piece of HTML you didn't expect to see (for example, a comment, or a tag you don't recognize)."]
+  );
 }
 
-// ============ RESOURCE 4: Lesson 4 — Building Your First HTML File ============
+// ============ LESSON 4 — About Me Paragraph ============
 {
-  const children = [
-    ...titleBlock("Term 1, Week 1, Lesson 4", "Building Your First HTML File", "Writing Your \"About Me\" Paragraph"),
+  const subject = "Term 1, Week 1, Lesson 4";
+  const lessonLine = "Building Your First HTML File";
+  const title = "Writing Your \"About Me\" Paragraph";
+
+  saveDoc([
+    ...titleBlock(subject, lessonLine, title),
     bodyPara("Add a title and a short paragraph introducing yourself to your index.html file. Plan your writing here first, then type it into your code."),
     spacer(150),
-    tierBox("Sentence starters — use these if you're not sure where to begin:", RED, [
+    bodyPara("My paragraph plan:", { bold: true }),
+    spacer(900),
+  ], "W1L4 - About Me Paragraph.docx");
+
+  differentiationDoc(subject, lessonLine, title, "W1L4 - About Me Paragraph - Differentiation Support.docx",
+    [
+      "Sentence starters:",
       '"Hi, my name is ____ and I am a Grade 9 student at ____."',
       '"This year, I\'m excited to learn ____ because ____."',
       '"In my free time, I like to ____."',
       '"One thing I hope to build or create this year is ____."',
-    ]),
-    spacer(200),
-    bodyPara("My paragraph plan:", { bold: true }),
-    spacer(500),
-    bodyPara("Worked example — here's what a finished version could look like:", { bold: true }),
-    spacer(80),
-    codeBlock([
+      "",
+      "Worked example:",
       "<h1>Hi, I'm Sara</h1>",
-      "<p>I'm a Grade 9 student learning web design this term.",
-      "In my free time, I like to draw and play basketball.",
-      "I'm excited to build my own website and learn how to",
-      "create things with code!</p>",
-    ]),
-    spacer(200),
-    tierBox("Finished early? Try this:", BLUE, [
-      "Add a second paragraph about your goals for this course, or a second heading introducing a hobby or interest.",
-    ]),
-  ];
-  saveDoc(children, "W1L4 - About Me Paragraph.docx");
+      "<p>I'm a Grade 9 student learning web design this term. In my free time,",
+      "I like to draw and play basketball. I'm excited to build my own website",
+      "and learn how to create things with code!</p>",
+    ],
+    ["Add a second paragraph about your goals for this course, or a second heading introducing a hobby or interest."]
+  );
 }
