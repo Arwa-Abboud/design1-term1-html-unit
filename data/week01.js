@@ -97,10 +97,14 @@ TERM1_WEEKS.push({
         "Mini-lecture: What is HTML (HyperText Markup Language)? It is the structural 'skeleton' of every webpage — browsers read HTML and render it visually.",
         "Live demo: use 'View Page Source' / Inspect Element on a real website to reveal the HTML underneath what students normally see.",
         "Introduce key vocabulary: Tag, Element, Attribute, Hyperlink, Navigation, Website, Webpage.",
-        "Teacher-led walkthrough: identify webpage components (header, navigation, main content, images, footer) on a sample site.",
+        "3 Reads on the sample website: Read 1 — browse it once just to see what the site is about. Read 2 — go through again identifying the header, navigation, main content, and footer. Read 3 — look a third time asking 'why is it organized this way for its audience?'",
         "Discuss the week's inquiry question — 'How can websites be used to solve communication problems and meet user needs?' — and connect it explicitly to Criterion A: Inquiring and Analyzing."
       ],
       code: "<!-- What the browser shows vs. what's underneath -->\n<header>Site Name</header>\n<nav>Home | About | Contact</nav>\n<main>\n  <h1>Welcome</h1>\n  <p>This is the main content area.</p>\n</main>\n<footer>&copy; 2026</footer>",
+      literacyStrategy: {
+        name: "3 Reads Approach",
+        note: "Applied to analyzing the sample website itself: what is it about (Read 1), how is it structured — header/nav/content/footer (Read 2), why is it organized this way for its audience (Read 3). Sets the pattern for analyzing any webpage this term."
+      },
       task: "In pairs, browse two websites and complete a 'Website Anatomy' worksheet identifying the header, navigation, main content, and footer, plus one thing HTML is doing behind the scenes.",
       successChecklist: [
         "Can define HTML in their own words.",

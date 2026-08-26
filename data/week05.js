@@ -39,9 +39,14 @@ TERM1_WEEKS.push({
         "Mini-lecture: the web is a network of linked documents. The <a> (anchor) tag with an href attribute creates a clickable link to another page or site — connect this to how networked devices exchange information.",
         "Demo: build a link to an external website, then a link to a second local HTML file (e.g. about.html).",
         "Introduce the target=\"_blank\" attribute for opening links in a new tab, and discuss when that's appropriate (external sites) vs. not (internal site navigation).",
-        "Guided notes: students record the anchor tag syntax and the difference between an absolute link (full web address) and a relative link (a file in the same project)."
+        "Guided notes: students record the anchor tag syntax and the difference between an absolute link (full web address) and a relative link (a file in the same project).",
+        "Frayer Model: in pairs, students complete a Frayer Model for 'Absolute Link' vs. 'Relative Link' side by side — definition, characteristics, a real example, and a non-example for each — since these two terms are the ones most often confused."
       ],
       code: "<!-- External link -->\n<a href=\"https://www.wikipedia.org\" target=\"_blank\">Visit Wikipedia</a>\n\n<!-- Internal (relative) link to another page in the same project -->\n<a href=\"about.html\">About Me</a>",
+      literacyStrategy: {
+        name: "Frayer Model",
+        note: "Absolute Link vs. Relative Link are the two terms students confuse most this week — a side-by-side Frayer Model pair makes the contrast explicit before they start building navigation."
+      },
       task: "Create one external link and one internal link (to a second file they create now if they don't already have one, e.g. about.html) on their homepage.",
       successChecklist: [
         "Can explain what the href attribute does.",

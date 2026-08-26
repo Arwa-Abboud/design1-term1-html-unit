@@ -78,11 +78,15 @@ TERM1_WEEKS.push({
       warmup: "Re-read your design specification from Lesson 1 — has anything changed since then?",
       main: [
         "Explain the Website Prototype Review formative assessment (10 pts) and how it will be scored against the student's own design specification.",
-        "Structured peer review: in pairs, students navigate each other's prototype using a review checklist (audience fit, navigation, completeness, consistency).",
+        "Structured peer review: in pairs, students navigate each other's prototype using a review checklist (audience fit, navigation, completeness, consistency), using Accountable Talk stems to keep feedback specific and respectful ('I noticed...', 'Can you explain why...?', 'I'd suggest...').",
         "Teacher circulates during peer review to observe and add feedback for the formal grade.",
         "Students record the top 2 pieces of feedback received to act on next lesson."
       ],
       code: null,
+      literacyStrategy: {
+        name: "Accountable Talk",
+        note: "The peer review checklist is delivered through structured Accountable Talk stems, not free-form comments — keeps a graded peer review process fair, specific, and respectful."
+      },
       task: "Complete the Website Prototype Review: present the current site for peer + teacher review and record 2 concrete pieces of feedback.",
       successChecklist: [
         "Create a multi-page website.",

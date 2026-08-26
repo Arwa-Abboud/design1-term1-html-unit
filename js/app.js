@@ -39,6 +39,13 @@
     vocabBtn.addEventListener("click", showVocabulary);
     sidebar.appendChild(vocabBtn);
 
+    var literacyBtn = document.createElement("button");
+    literacyBtn.className = "sidebar-item rubrics-item";
+    literacyBtn.id = "nav-literacy";
+    literacyBtn.innerHTML = "<span class=\"week-num\">&#128221; LITERACY STRATEGIES</span><span class=\"week-topic\">3 Reads &middot; Accountable Talk &middot; Frayer Model</span>";
+    literacyBtn.addEventListener("click", showLiteracyStrategies);
+    sidebar.appendChild(literacyBtn);
+
     var divider = document.createElement("div");
     divider.className = "sidebar-divider";
     divider.textContent = "Weeks";
@@ -85,6 +92,11 @@
       lines.push("New Vocabulary:");
       l.vocabulary.forEach(function (v) { lines.push("- " + v.term + ": " + v.definition); });
     }
+    if (l.literacyStrategy) {
+      lines.push("");
+      lines.push("Literacy Strategy — " + l.literacyStrategy.name + ":");
+      lines.push(l.literacyStrategy.note);
+    }
     if (l.task) { lines.push(""); lines.push("Student Task:"); lines.push(l.task); }
     if (l.successChecklist && l.successChecklist.length) {
       lines.push("");
@@ -104,6 +116,7 @@
       (l.main && l.main.length ? "<div class=\"lesson-section\"><h4>Main Activity</h4>" + orderedList(l.main) + "</div>" : "") +
       (l.code ? "<div class=\"lesson-section\"><h4>Code Example</h4><pre class=\"code-block\">" + esc(l.code) + "</pre></div>" : "") +
       (l.vocabulary && l.vocabulary.length ? "<div class=\"lesson-section\"><h4>New Vocabulary</h4><dl class=\"vocab-list\">" + l.vocabulary.map(function (v) { return "<dt>" + esc(v.term) + "</dt><dd>" + esc(v.definition) + "</dd>"; }).join("") + "</dl></div>" : "") +
+      (l.literacyStrategy ? "<div class=\"lesson-section literacy-strategy-block\"><h4>&#128221; Literacy Strategy — " + esc(l.literacyStrategy.name) + "</h4><p>" + esc(l.literacyStrategy.note) + "</p></div>" : "") +
       (l.task ? "<div class=\"lesson-section\"><h4>Student Task</h4><p>" + esc(l.task) + "</p></div>" : "") +
       (l.successChecklist && l.successChecklist.length ? "<div class=\"lesson-section\"><h4>Success Criteria</h4>" + checklist(l.successChecklist) + "</div>" : "") +
       (l.exitTicket ? "<div class=\"lesson-section\"><h4>Exit Ticket / Formative Check</h4><p>" + esc(l.exitTicket) + "</p></div>" : "") +
@@ -345,6 +358,45 @@
     var copyBtn = document.getElementById("copy-vocab-list");
     if (copyBtn) attachCopyHandler(copyBtn, function () { return vocabPlainText(result.entries); });
 
+    window.scrollTo(0, 0);
+  }
+
+  function literacyStrategyCard(s, idx) {
+    var stepsHtml = s.steps.map(function (st) {
+      return "<div class=\"lesson-section\"><h4>" + esc(st.label) + "</h4><p>" + esc(st.detail) + "</p></div>";
+    }).join("");
+    return "<details class=\"lesson-card\"" + (idx === 0 ? " open" : "") + ">" +
+      "<summary><span class=\"lesson-tag\">Strategy</span><span class=\"lesson-title-text\">" + esc(s.name) + "</span><span class=\"chevron\">&#9656;</span></summary>" +
+      "<div class=\"lesson-body\"><p style=\"margin-top:0;\"><em>" + esc(s.purpose) + "</em></p>" + stepsHtml + "</div>" +
+      "</details>";
+  }
+
+  function showLiteracyStrategies() {
+    setActive("nav-literacy");
+
+    var usageRows = [];
+    TERM1_WEEKS.slice().sort(function (a, b) { return a.week - b.week; }).forEach(function (w) {
+      w.lessons.forEach(function (l) {
+        if (l.literacyStrategy) {
+          usageRows.push("<tr><td class=\"rubric-points-cell\">Wk " + w.week + " &middot; L" + l.number + "</td><td><strong>" + esc(l.literacyStrategy.name) + "</strong></td><td>" + esc(l.title) + "</td></tr>");
+        }
+      });
+    });
+
+    var html = "<div class=\"week-header\">" +
+      "<span class=\"week-badge\">Literacy Strategies</span>" +
+      "<h2>ENS DXB Required Literacy Strategies</h2>" +
+      "<p style=\"margin:0;color:var(--muted);font-size:13.5px;\">Printable posters for the classroom wall live in resources/literacy-strategy-posters/. This is the same reference, digitally, plus where each strategy is used this term.</p>" +
+      "</div>" +
+      "<ul class=\"lesson-list\">" + LITERACY_STRATEGIES.map(literacyStrategyCard).join("") + "</ul>";
+
+    if (usageRows.length) {
+      html += "<h3 class=\"rubric-section-title\">Where These Are Used This Term</h3>" +
+        "<div class=\"rubric-card\"><table class=\"rubric-table simple\"><thead><tr><th>Lesson</th><th>Strategy</th><th>Lesson Title</th></tr></thead><tbody>" +
+        usageRows.join("") + "</tbody></table></div>";
+    }
+
+    content.innerHTML = html;
     window.scrollTo(0, 0);
   }
 

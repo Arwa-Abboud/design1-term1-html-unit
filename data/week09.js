@@ -38,9 +38,14 @@ TERM1_WEEKS.push({
         "Mini-lecture: forms let a webpage collect input from a user (text, choices, clicks) — this is how websites become interactive rather than just informational, directly tied to stakeholder needs.",
         "Demo: build a minimal form live: <form>, a text <input>, a <label>, and a submit <button>.",
         "Explain the label-for-id relationship so form fields are accessible and clickable by their label.",
-        "Guided notes: students record the four core form elements and what each does."
+        "Guided notes: students record the four core form elements and what each does.",
+        "Frayer Model: individually, students complete a Frayer Model for 'Input' — definition, characteristics (the different types: text, email, etc.), a real example from today's demo, and a non-example (e.g. a <p> tag, since it displays text but never collects it)."
       ],
       code: "<form>\n  <label for=\"name\">Your Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\">\n  <button type=\"submit\">Submit</button>\n</form>",
+      literacyStrategy: {
+        name: "Frayer Model",
+        note: "'Input' is the term students most often confuse with the visible <label> next to it — a Frayer Model makes clear that Input is the interactive field itself, not its text description."
+      },
       task: "Sketch (on paper or in notes) what a simple 'Contact Me' form on their own website should ask for, before building it.",
       successChecklist: [
         "Can name the 4 core form elements (form, input, label, button).",

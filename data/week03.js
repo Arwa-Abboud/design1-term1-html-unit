@@ -37,9 +37,14 @@ TERM1_WEEKS.push({
         "Mini-lecture: headings (h1-h6) create a visual and semantic hierarchy — h1 is the most important, h6 the least. Paragraphs (<p>) group related sentences.",
         "Demo: build a simple page using h1 for the page title, h2 for section titles, and <p> for body text.",
         "Discuss why hierarchy matters for both sighted readers (skimming) and screen readers (accessibility/navigation).",
+        "3 Reads applied to the formatted example page: Read 1 — what is this page about? Read 2 — which headings/paragraphs carry which ideas? Read 3 — why does this structure make it easier to read than the unformatted wall of text from the warm-up?",
         "Guided notes: students record the heading hierarchy rules and one example of correct vs incorrect use (e.g. skipping from h1 straight to h4)."
       ],
       code: "<h1>My Website</h1>\n<p>Welcome to my personal site.</p>\n\n<h2>About Me</h2>\n<p>A short paragraph about who I am.</p>\n\n<h2>My Hobbies</h2>\n<p>A short paragraph about what I enjoy doing.</p>",
+      literacyStrategy: {
+        name: "3 Reads Approach",
+        note: "Used to compare skimming the formatted example (Reads 1-2, easy) against the unformatted wall of text from the warm-up — makes the value of headings/paragraphs concrete before students apply it themselves."
+      },
       task: "On paper or in notes, sketch the heading hierarchy (h1/h2/h3) for their own personal website's homepage before touching code.",
       successChecklist: [
         "Can explain the purpose of h1-h6.",

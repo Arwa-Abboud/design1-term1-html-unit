@@ -40,9 +40,14 @@ TERM1_WEEKS.push({
         "Live demo: build a document structure line by line, explaining what each tag does and why the order/nesting matters.",
         "Connect to today's standard: decomposing a webpage into logical structural parts is an example of breaking a large problem into smaller, manageable components.",
         "Show a 'broken' structure example (tags missing or out of order) and diagnose it together as a class.",
-        "Guided notes: students copy a labeled diagram of the structure into their notes."
+        "Guided notes: students copy a labeled diagram of the structure into their notes.",
+        "Frayer Model: as a class, complete a Frayer Model for 'Nesting' — definition in their own words, characteristics, a real example from today's code, and a non-example (e.g. tags placed side by side instead of inside one another)."
       ],
       code: "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Page Title (shows in browser tab)</title>\n  </head>\n  <body>\n    <!-- Everything visible on the page goes here -->\n  </body>\n</html>",
+      literacyStrategy: {
+        name: "Frayer Model",
+        note: "Use the printable/whiteboard Frayer Model template on the word 'Nesting' — this is the most abstract of today's 4 new terms and benefits most from being unpacked into definition/characteristics/examples/non-examples before moving on."
+      },
       task: "Label a given blank HTML structure diagram with the correct tag names and a one-line description of each tag's job.",
       successChecklist: [
         "Can name the 5 core structural tags in the correct order.",
@@ -109,12 +114,17 @@ TERM1_WEEKS.push({
       warmup: "Quick-fire: show 3 broken code snippets on the board, students spot the error out loud.",
       main: [
         "Peer review: swap laptops/screens with a partner and use a structure checklist to review each other's file.",
+        "Accountable Talk: partners must use sentence stems while reviewing — 'I noticed that...', 'Can you explain why...?', 'I'd suggest...' — instead of just pointing at the screen.",
         "Whole-class troubleshooting of the 2-3 most common recurring errors observed during peer review.",
         "Students fix any issues flagged by their partner.",
         "Formal formative check: teacher reviews each student's file against this week's success criteria.",
         "Preview next week's topic: Headings, Paragraphs & Text Formatting."
       ],
       code: null,
+      literacyStrategy: {
+        name: "Accountable Talk",
+        note: "Structures the peer review conversation itself — students use the Accountable Talk stems ('I noticed that...', 'Can you explain why...?') rather than vague comments, so feedback stays specific and respectful."
+      },
       task: "Complete the peer review checklist, fix flagged issues, and submit the final corrected index.html for the formative check.",
       successChecklist: [
         "Create a valid HTML document structure.",

@@ -54,12 +54,16 @@ TERM1_WEEKS.push({
       objective: "Give and receive structured peer feedback to identify usability issues the site's own creator might miss.",
       warmup: "Quick pair-up and swap: 'You have 2 minutes to explore your partner's site before we start — first impressions only.'",
       main: [
-        "Explain the peer feedback formative check (structured, not just 'looks good!') — use a feedback protocol (e.g. 2 things working well, 2 things to improve, 1 question).",
+        "Explain the peer feedback formative check (structured, not just 'looks good!') — use a feedback protocol (e.g. 2 things working well, 2 things to improve, 1 question), delivered using Accountable Talk stems.",
         "Structured peer review in pairs or small groups using the protocol.",
         "Students record all feedback received, separate from their own testing checklist from yesterday.",
         "Teacher circulates during peer review to observe and support quieter groups."
       ],
       code: null,
+      literacyStrategy: {
+        name: "Accountable Talk",
+        note: "Feedback protocol is delivered through stems like 'I noticed...', 'I'd suggest...', 'Can you explain why...?' — keeps peer feedback specific and actionable rather than a quick 'looks good!'"
+      },
       task: "Give structured feedback to at least one peer's site and receive/record feedback on their own site using the class protocol.",
       successChecklist: [
         "Feedback given is specific and actionable, not just praise.",
