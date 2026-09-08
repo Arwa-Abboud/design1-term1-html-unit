@@ -1,5 +1,6 @@
 .claude/
 planner_review/
+backups/
 __pycache__/
 node_modules/
 ~$*.docx
