@@ -28,14 +28,15 @@ TERM1_WEEKS.push({
       duration: "60 min",
       objective: "Use heading tags (h1-h6) and paragraph tags to structure webpage text in a clear hierarchy.",
       vocabulary: [
-        { term: "Heading", definition: "A title tag (h1 through h6) that labels a page or section, with h1 the most important and h6 the least." },
+        { term: "Heading", definition: "A heading tag (h1 through h6) that labels a page or section, with h1 the biggest/most important and h6 the smallest/least. Different from the <title> tag, which only sets the text shown in the browser tab." },
         { term: "Paragraph", definition: "The <p> tag, used to group a block of related sentences together as one unit of text." },
         { term: "Hierarchy", definition: "An ordered structure from most to least important — used here to describe how heading levels (h1 > h2 > h3...) organize a page." }
       ],
       warmup: "Show a wall of unformatted text vs. the same text with headings/paragraphs. 'Which one would you actually read?'",
       main: [
         "Mini-lecture: headings (h1-h6) create a visual and semantic hierarchy — h1 is the most important, h6 the least. Paragraphs (<p>) group related sentences.",
-        "Demo: build a simple page using h1 for the page title, h2 for section titles, and <p> for body text.",
+        "Demo: build a simple page using h1 for the page's main heading, h2 for section headings, and <p> for body text.",
+        "Clarify a common mix-up: <title> (in <head>) sets the browser tab text; <h1> is the big visible heading inside the page. They are not the same tag.",
         "Discuss why hierarchy matters for both sighted readers (skimming) and screen readers (accessibility/navigation).",
         "3 Reads applied to the formatted example page: Read 1 — what is this page about? Read 2 — which headings/paragraphs carry which ideas? Read 3 — why does this structure make it easier to read than the unformatted wall of text from the warm-up?",
         "Guided notes: students record the heading hierarchy rules and one example of correct vs incorrect use (e.g. skipping from h1 straight to h4)."
@@ -50,7 +51,7 @@ TERM1_WEEKS.push({
         "Can explain the purpose of h1-h6.",
         "Can explain why <p> is used to group text."
       ],
-      exitTicket: "'Which heading level would you use for a page's main title, and which for a section title?'",
+      exitTicket: "'Which heading level would you use for a page's main heading, and which for a section heading? And which tag would you use to set the browser tab text instead?'",
       notes: null
     },
     {
@@ -66,13 +67,13 @@ TERM1_WEEKS.push({
       warmup: "Quick recap: order the heading tags h1-h6 from most to least important.",
       main: [
         "Teacher models adding a new section (heading + paragraph) to a sample page, live.",
-        "Checkpoint 1: students add an h1 page title and an introductory paragraph.",
+        "Checkpoint 1: students add an h1 main heading and an introductory paragraph.",
         "Checkpoint 2: students add at least 2 more sections, each with an h2 and a paragraph.",
         "Introduce basic text formatting tags: <strong> (bold/important) and <em> (emphasis/italic), and when to use each semantically (not just visually).",
         "Students add one <strong> and one <em> use inside their paragraphs."
       ],
       code: "<h2>My Favorite Subject</h2>\n<p>My favorite subject is <strong>Design</strong>, because I get to <em>build real things</em> with code.</p>",
-      task: "Build a content page (or expand index.html) with a title (h1), at least two sections (h2 + paragraph each), and at least one <strong> and one <em> used correctly.",
+      task: "Build a content page (or expand index.html) with a main heading (h1), at least two sections (h2 + paragraph each), and at least one <strong> and one <em> used correctly.",
       successChecklist: [
         "Heading hierarchy used correctly (no skipped levels).",
         "At least one <strong> and one <em> used appropriately."
