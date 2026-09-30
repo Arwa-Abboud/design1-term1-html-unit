@@ -83,22 +83,24 @@ TERM1_WEEKS.push({
       number: 3,
       title: "Build an F1 Website: Four Pages",
       duration: "60 min",
-      objective: "Build a four-page website from scratch (Home, About Us, Contact Us, Vision and Mission) using headings, paragraphs and lists.",
+      objective: "Build a four-page website from scratch (Home, About Us, Contact Us, Vision and Mission) and connect the pages with a navigation menu of hyperlinks.",
       warmup: "'Think of a website you use often. Which pages does it almost always have? Name 3.'",
       main: [
         "Explain the project: an F1 website with four pages, each saved as its own .html file in ONE folder: index.html, about.html, contact.html, vision.html.",
         "Teacher models the shared page skeleton: only the <title> and the page text change from page to page.",
         "Build the Home page (index.html) together, save it and open it in the browser.",
         "Students build the other three pages independently: the Page Content sheet gives the text for each page (labeled main heading, paragraph, list), and students write the HTML themselves.",
+        "Students add the same navigation menu (Home, About Us, Contact Us, Vision and Mission) to the top of every page, plus an external link to formula1.com on the Home page, and test every link.",
         "Stretch challenge: add a fifth page, team.html, about a favourite F1 team (heading, paragraph, list of 3 facts)."
       ],
       code: "<!DOCTYPE html>\n<html>\n<head>\n  <title>F1 World - Home</title>\n</head>\n<body>\n  <h1>Welcome to F1 World</h1>\n  <p>Formula 1 is the fastest motor racing sport in the world.</p>\n</body>\n</html>",
-      task: "Create all four F1 pages with the correct file names, writing the HTML for the text on the Page Content sheet, and check each one in the browser.",
+      task: "Create all four F1 pages with the correct file names, writing the HTML for the text on the Page Content sheet, then connect them with a navigation menu on every page and test every link.",
       successChecklist: [
         "All 4 files are created with the correct names.",
-        "Each page shows its heading and text in the browser."
+        "The navigation menu is at the top of every page.",
+        "Every link works when clicked."
       ],
-      exitTicket: "Show all 4 pages open in the browser (next lesson we connect them with hyperlinks).",
+      exitTicket: "Show a partner that you can reach every page from every other page using your menu.",
       notes: "Keep file names lowercase with no spaces; this prevents most broken links in Lesson 4."
     },
     {
