@@ -81,40 +81,41 @@ TERM1_WEEKS.push({
     },
     {
       number: 3,
-      title: "Independent Application: A Fully Connected Site",
+      title: "Build an F1 Website: Four Pages",
       duration: "60 min",
-      objective: "Independently expand and refine their site's navigation so every page connects to every other page.",
-      warmup: "'Click through your own site right now — is there any page you can't get back to Home from?'",
+      objective: "Build a four-page website from scratch (Home, About Us, Contact Us, Vision and Mission) using headings, paragraphs and lists.",
+      warmup: "'Think of a website you use often. Which pages does it almost always have? Name 3.'",
       main: [
-        "Students audit their own site: does every page have the navigation menu? Can a visitor always get back to Home?",
-        "Independently fix any missing or broken links.",
-        "Add the navigation menu consistently across all existing pages.",
-        "Stretch challenge: link to an external resource relevant to a page's content (e.g. a source they used, a tool they mention) using target=\"_blank\" appropriately.",
-        "Teacher circulates for 1:1 support on trickier relative path issues."
+        "Explain the project: an F1 website with four pages, each saved as its own .html file in ONE folder: index.html, about.html, contact.html, vision.html.",
+        "Teacher models the shared page skeleton: only the <title> and the page text change from page to page.",
+        "Build the Home page (index.html) together, save it and open it in the browser.",
+        "Students build the other three pages independently, typing the ready-made text from the Page Builder sheet so no one is stuck on content.",
+        "Stretch challenge: add a fifth page, team.html, about a favourite F1 team (heading, paragraph, list of 3 facts)."
       ],
-      code: null,
-      task: "Ensure every page on their site has a consistent, fully working navigation menu, with no broken links.",
+      code: "<!DOCTYPE html>\n<html>\n<head>\n  <title>F1 World - Home</title>\n</head>\n<body>\n  <h1>Welcome to F1 World</h1>\n  <p>Formula 1 is the fastest motor racing sport in the world.</p>\n</body>\n</html>",
+      task: "Create all four F1 pages with the correct file names and the text from the Page Builder sheet, and check each one in the browser.",
       successChecklist: [
-        "Navigation is present and identical across all pages.",
-        "Every link has been tested and works."
+        "All 4 files are created with the correct names.",
+        "Each page shows its heading and text in the browser."
       ],
-      exitTicket: "None formal — informal circulation check.",
-      notes: null
+      exitTicket: "Show all 4 pages open in the browser (next lesson we connect them with hyperlinks).",
+      notes: "Keep file names lowercase with no spaces; this prevents most broken links in Lesson 4."
     },
     {
       number: 4,
-      title: "Formative Assessment: Hyperlinks & Navigation Task",
+      title: "Formative Assessment: Connecting the F1 Website",
       duration: "60 min",
-      objective: "Demonstrate correct, independent creation of working hyperlinks and site navigation for the week's graded formative assessment.",
+      objective: "Connect the four F1 pages with a working navigation menu and one external link, for the week's graded formative assessment.",
       warmup: "Quick-fire: spot the bug in 3 broken href examples on the board.",
       main: [
-        "Explain the formative assessment task and rubric (part of the combined 'Hyperlinks, Images & Tables Activities' assessment).",
-        "Students complete a navigation task independently: build/verify a working multi-page navigation structure against the success criteria.",
-        "Teacher circulates and records evidence for the rubric.",
-        "Peer test: swap with a partner and try to 'break' their navigation by clicking everything — report back any issues found."
+        "Explain the formative task and rubric (part of the combined 'Hyperlinks, Images & Tables Activities' assessment).",
+        "Students paste the same <nav> menu at the top of all four pages, right after <body>.",
+        "Students add one external link on the Home page to formula1.com, opening in a new tab.",
+        "Students test every link using the link-test table on their sheet and fix any broken ones.",
+        "Peer test: swap with a partner and try to 'break' their navigation, then submit evidence via Toddle."
       ],
-      code: null,
-      task: "Complete and submit evidence of a fully working navigation menu across their site as part of the 'Hyperlinks, Images & Tables Activities' formative assessment (10 pts).",
+      code: "<nav>\n  <ul>\n    <li><a href=\"index.html\">Home</a></li>\n    <li><a href=\"about.html\">About Us</a></li>\n    <li><a href=\"contact.html\">Contact Us</a></li>\n    <li><a href=\"vision.html\">Vision and Mission</a></li>\n  </ul>\n</nav>",
+      task: "Connect all four F1 pages with a working navigation menu plus one external link, test every link, and submit evidence as part of the 'Hyperlinks, Images & Tables Activities' formative assessment (10 pts).",
       successChecklist: [
         "Create working hyperlinks.",
         "Link webpages successfully.",
