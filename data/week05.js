@@ -89,11 +89,11 @@ TERM1_WEEKS.push({
         "Explain the project: an F1 website with four pages, each saved as its own .html file in ONE folder: index.html, about.html, contact.html, vision.html.",
         "Teacher models the shared page skeleton: only the <title> and the page text change from page to page.",
         "Build the Home page (index.html) together, save it and open it in the browser.",
-        "Students build the other three pages independently, typing the ready-made text from the Page Builder sheet so no one is stuck on content.",
+        "Students build the other three pages independently: the Page Content sheet gives the text for each page (labeled main heading, paragraph, list), and students write the HTML themselves.",
         "Stretch challenge: add a fifth page, team.html, about a favourite F1 team (heading, paragraph, list of 3 facts)."
       ],
       code: "<!DOCTYPE html>\n<html>\n<head>\n  <title>F1 World - Home</title>\n</head>\n<body>\n  <h1>Welcome to F1 World</h1>\n  <p>Formula 1 is the fastest motor racing sport in the world.</p>\n</body>\n</html>",
-      task: "Create all four F1 pages with the correct file names and the text from the Page Builder sheet, and check each one in the browser.",
+      task: "Create all four F1 pages with the correct file names, writing the HTML for the text on the Page Content sheet, and check each one in the browser.",
       successChecklist: [
         "All 4 files are created with the correct names.",
         "Each page shows its heading and text in the browser."
