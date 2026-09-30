@@ -105,19 +105,19 @@ TERM1_WEEKS.push({
     },
     {
       number: 4,
-      title: "Formative Assessment: Connecting the F1 Website",
+      title: "Formative Assessment: Finishing and Checking the F1 Website",
       duration: "60 min",
-      objective: "Connect the four F1 pages with a working navigation menu and one external link, for the week's graded formative assessment.",
+      objective: "Finish the F1 website started in Lesson 3 and check it against the formative checklist: four pages, a working navigation menu on every page, and one external link.",
       warmup: "Quick-fire: spot the bug in 3 broken href examples on the board.",
       main: [
-        "Explain the formative task and rubric (part of the combined 'Hyperlinks, Images & Tables Activities' assessment).",
-        "Students paste the same <nav> menu at the top of all four pages, right after <body>.",
-        "Students add one external link on the Home page to formula1.com, opening in a new tab.",
-        "Students test every link using the link-test table on their sheet and fix any broken ones.",
+        "Explain the formative task and the Final Checklist (part of the combined 'Hyperlinks, Images & Tables Activities' assessment).",
+        "Students continue building from Lesson 3: this is a two-day task, so Lesson 4 is finishing time.",
+        "Students work through the Final Checklist: pages, navigation menu on every page, link test table, formula1.com link.",
+        "Students who are stuck compare their code with the Example Code sheet, one line at a time.",
         "Peer test: swap with a partner and try to 'break' their navigation, then submit evidence via Toddle."
       ],
       code: "<nav>\n  <ul>\n    <li><a href=\"index.html\">Home</a></li>\n    <li><a href=\"about.html\">About Us</a></li>\n    <li><a href=\"contact.html\">Contact Us</a></li>\n    <li><a href=\"vision.html\">Vision and Mission</a></li>\n  </ul>\n</nav>",
-      task: "Connect all four F1 pages with a working navigation menu plus one external link, test every link, and submit evidence as part of the 'Hyperlinks, Images & Tables Activities' formative assessment (10 pts).",
+      task: "Finish the four-page F1 website, complete every item on the Final Checklist, and submit evidence as part of the 'Hyperlinks, Images & Tables Activities' formative assessment (10 pts).",
       successChecklist: [
         "Create working hyperlinks.",
         "Link webpages successfully.",
