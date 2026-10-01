@@ -1,0 +1,27 @@
+F1 Image Pack - Design 1, Week 6
+All images are from Wikimedia Commons and are free to use with credit.
+Keep this file with the images.
+
+f1-race-start.jpg  (for: Home)
+  "2015 Abu Dhabi Grand Prix - Race start (22882439484)" by Berik from United Kingdom, CC BY-SA 2.0
+  https://commons.wikimedia.org/wiki/File:2015_Abu_Dhabi_Grand_Prix_-_Race_start_(22882439484).jpg
+
+alfa-romeo-1950.jpg  (for: About Us)
+  "1950 Alfa Romeo 158 (54834195044)" by David Merrett from Daventry, England, CC BY 4.0
+  https://commons.wikimedia.org/wiki/File:1950_Alfa_Romeo_158_(54834195044).jpg
+
+f1-helmets.jpg  (for: About Us (extra))
+  "Assorted Helmets Left at Formula 1 Exhibition, London" by Hullian111, CC BY-SA 4.0
+  https://commons.wikimedia.org/wiki/File:Assorted_Helmets_Left_at_Formula_1_Exhibition,_London.jpg
+
+yas-marina-circuit.jpg  (for: Contact Us)
+  "Sunset at Yas Marina circuit - Abu Dhabi 2014" by Cesar I. Martins, CC BY 2.0
+  https://commons.wikimedia.org/wiki/File:Sunset_at_Yas_Marina_circuit_-_Abu_Dhabi_2014.jpg
+
+pit-stop.jpg  (for: Vision and Mission)
+  "Pit Stop Practice at Williams (14845909054)" by pedrik, CC BY 2.0
+  https://commons.wikimedia.org/wiki/File:Pit_Stop_Practice_at_Williams_(14845909054).jpg
+
+wind-tunnel-model.jpg  (for: Vision and Mission (extra))
+  "2017 Manor MRT06 60% model" by Unknown author, CC0
+  https://commons.wikimedia.org/wiki/File:2017_Manor_MRT06_60%25_model.jpg
