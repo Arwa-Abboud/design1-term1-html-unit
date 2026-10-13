@@ -19,7 +19,7 @@ TERM1_WEEKS.push({
   ],
   crossCurricular: "English: Oral communication, presentation, and reflection skills.",
   nationalIdentity: "UAE Future Skills Agenda",
-  formative: "Reflection (Lesson 4)",
+  formative: "Reflection (Lesson 4) - optional 10-pt rubric in the Rubrics tab",
   summative: "Final Website Presentation — deliverable milestone for the completed Unit 1 project",
   lessons: [
     {

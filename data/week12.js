@@ -19,7 +19,7 @@ TERM1_WEEKS.push({
   ],
   crossCurricular: "Career Education: Building a personal digital portfolio and professional online presence.",
   nationalIdentity: "UAE Youth Development",
-  formative: "Teacher conference — deliverable milestone: Website Development (Lesson 4)",
+  formative: "Teacher conference — deliverable milestone: Website Development (Lesson 4) - optional 10-pt rubric in the Rubrics tab",
   summative: null,
   lessons: [
     {

@@ -19,7 +19,7 @@ TERM1_WEEKS.push({
   ],
   crossCurricular: "Design: Using feedback and iterative improvement to enhance products.",
   nationalIdentity: "UAE Innovation Strategy",
-  formative: "Peer feedback (Lesson 2)",
+  formative: "Peer feedback (Lesson 2) - optional 10-pt rubric in the Rubrics tab",
   summative: "Personal Multi-Page Website Project — 100 pts, Unit 1 Outcomes (due end of Lesson 4)",
   lessons: [
     {

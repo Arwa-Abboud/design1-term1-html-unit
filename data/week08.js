@@ -19,7 +19,7 @@ TERM1_WEEKS.push({
   ],
   "crossCurricular": "Mathematics: Representing and organizing numerical data using rows and columns.",
   "nationalIdentity": "UAE Statistical Information: presenting real data about the Abu Dhabi Grand Prix clearly in a table",
-  "formative": "Table activity (Lesson 4): Abu Dhabi Grand Prix facts table on the F1 website",
+  "formative": "Table activity (Lesson 4): Abu Dhabi Grand Prix facts table on the F1 website - optional 10-pt rubric in the Rubrics tab",
   "summative": null,
   "lessons": [
     {

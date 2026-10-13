@@ -19,7 +19,7 @@ TERM1_WEEKS.push({
   ],
   crossCurricular: "Design & English: Communicating ideas through a completed digital product.",
   nationalIdentity: "UAE Digital Future",
-  formative: "Project review (Lesson 3)",
+  formative: "Project review (Lesson 3) - optional 10-pt rubric in the Rubrics tab",
   summative: null,
   lessons: [
     {

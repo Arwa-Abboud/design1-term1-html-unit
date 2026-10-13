@@ -19,7 +19,7 @@ TERM1_WEEKS.push({
   ],
   crossCurricular: "Social Studies: Organizing historical and cultural information effectively.",
   nationalIdentity: "UAE Heritage and Culture",
-  formative: "Observation, practical task (Lesson 4)",
+  formative: "Observation, practical task (Lesson 4) - optional 10-pt rubric in the Rubrics tab",
   summative: null,
   lessons: [
     {

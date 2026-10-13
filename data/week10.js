@@ -19,7 +19,7 @@ TERM1_WEEKS.push({
   ],
   crossCurricular: "Design: Applying design principles to create functional digital products.",
   nationalIdentity: "UAE Smart Government",
-  formative: "Teacher review — deliverable milestone: Website Design Task (Lesson 4)",
+  formative: "Teacher review — deliverable milestone: Website Design Task (Lesson 4) - optional 10-pt rubric in the Rubrics tab",
   summative: null,
   lessons: [
     {

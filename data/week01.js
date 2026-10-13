@@ -21,7 +21,7 @@ TERM1_WEEKS.push({
   ],
   crossCurricular: "English: Analyzing how websites communicate information to audiences.",
   nationalIdentity: "UAE Digital Transformation and Future Skills",
-  formative: "Observation, questioning, exit ticket (Lesson 4)",
+  formative: "Observation, questioning, exit ticket (Lesson 4) - optional 10-pt rubric in the Rubrics tab",
   summative: null,
   lessons: [
     {

@@ -20,7 +20,7 @@ TERM1_WEEKS.push({
   ],
   crossCurricular: "ICT: Understanding how browsers interpret webpage structure.",
   nationalIdentity: "UAE Digital Economy",
-  formative: "HTML structure check (Lesson 4)",
+  formative: "HTML structure check (Lesson 4) - optional 10-pt rubric in the Rubrics tab",
   summative: null,
   lessons: [
     {
