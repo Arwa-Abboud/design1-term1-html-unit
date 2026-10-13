@@ -1,121 +1,143 @@
-// Week 8 — Oct 19 — Tables in HTML
+// Week 8: Oct 19: Tables in HTML (builds on the F1 website)
 TERM1_WEEKS.push({
-  week: 8,
-  dates: "Oct 19",
-  status: "content",
-  topic: "Tables in HTML",
-  inquiryQuestion: "How can websites collect information from users efficiently and accurately?",
-  criterion: "Criterion C: Creating the Solution — C.iii: Follow the plan to create the solution, which functions as intended.",
-  standard: "PG 1: Develop, utilize and evaluate algorithms to model and solve problems. (Computational Thinking, GLE CS.HS.1.5 — Abstraction is used to reduce complexity by focusing on the main idea.)",
-  weekObjectives: [
+  "week": 8,
+  "dates": "Oct 19",
+  "status": "content",
+  "topic": "Tables in HTML",
+  "inquiryQuestion": "How can websites collect information from users efficiently and accurately?",
+  "criterion": "Criterion C: Creating the Solution: C.iii: Follow the plan to create the solution, which functions as intended.",
+  "standard": "PG 1: Develop, utilize and evaluate algorithms to model and solve problems. (Computational Thinking, GLE CS.HS.1.5: Abstraction is used to reduce complexity by focusing on the main idea.)",
+  "weekObjectives": [
     "Create tables.",
     "Use rows and columns.",
     "Present data effectively."
   ],
-  successCriteria: [
+  "successCriteria": [
     "Create structured tables.",
     "Organize data accurately.",
     "Display information clearly."
   ],
-  crossCurricular: "Mathematics: Representing and organizing numerical data using rows and columns.",
-  nationalIdentity: "UAE Statistical Information",
-  formative: "Table activity (Lesson 4)",
-  summative: null,
-  lessons: [
+  "crossCurricular": "Mathematics: Representing and organizing numerical data using rows and columns.",
+  "nationalIdentity": "UAE Statistical Information: presenting real data about the Abu Dhabi Grand Prix clearly in a table",
+  "formative": "Table activity (Lesson 4): Abu Dhabi Grand Prix facts table on the F1 website",
+  "summative": null,
+  "lessons": [
     {
-      number: 1,
-      title: "Welcome Back: Tables 101",
-      duration: "60 min",
-      objective: "Explain how HTML tables organize data into rows and columns using table, tr, and td tags.",
-      vocabulary: [
-        { term: "Table", definition: "The <table> tag, used to organize data into rows and columns — not for page layout." },
-        { term: "Table Row", definition: "The <tr> tag — one horizontal row of a table." },
-        { term: "Table Data / Cell", definition: "The <td> tag — one individual cell of data inside a table row." },
-        { term: "Table Header", definition: "The <th> tag — a cell used for column/row titles, shown bold and centered by default." }
+      "number": 1,
+      "title": "Welcome Back: Tables 101 on the F1 Website",
+      "duration": "60 min",
+      "objective": "Explain how HTML tables organize data into rows and columns, and add an F1 Quick Facts table to the About Us page.",
+      "vocabulary": [
+        {
+          "term": "Table",
+          "definition": "The <table> tag, used to organize data into rows and columns: not for page layout."
+        },
+        {
+          "term": "Table Row",
+          "definition": "The <tr> tag: one horizontal row of a table."
+        },
+        {
+          "term": "Table Data / Cell",
+          "definition": "The <td> tag: one individual cell of data inside a table row."
+        },
+        {
+          "term": "Table Header",
+          "definition": "The <th> tag: a cell used for column/row titles, shown bold and centered by default."
+        }
       ],
-      warmup: "Welcome back from the break — quick recap game: name one tag we've learned so far and what it does (round-robin).",
-      main: [
-        "Mini-lecture: tables are for tabular data (rows/columns), not for page layout. Structure: <table> wraps everything, <tr> = table row, <td> = table data (cell).",
-        "Demo: build a simple table live (e.g. a weekly class schedule) showing how rows and cells nest.",
-        "Introduce <th> for header cells (bold, centered by default) vs. <td> for regular data cells.",
-        "Discuss abstraction: a table lets us represent complex data simply by focusing on rows and columns, not every individual detail."
+      "warmup": "Welcome back from the break: quick recap game. Name one tag on your F1 website and what it does (round-robin).",
+      "main": [
+        "Mini-lecture: tables are for data in rows and columns, not for page layout. <table> wraps everything, <tr> is a row, <td> is a cell.",
+        "Introduce <th> for header cells (bold and centered by default) versus <td> for data cells.",
+        "Demo: build the first two rows of the F1 Quick Facts table live.",
+        "Frayer Model: Table (definition, characteristics, example, non-example).",
+        "Students add the full F1 Quick Facts table to About Us from the Starter Sheet."
       ],
-      code: "<table>\n  <tr>\n    <th>Day</th>\n    <th>Subject</th>\n  </tr>\n  <tr>\n    <td>Monday</td>\n    <td>Design</td>\n  </tr>\n  <tr>\n    <td>Tuesday</td>\n    <td>Math</td>\n  </tr>\n</table>",
-      task: "Build a simple 2-column, 3-row table (e.g. their weekly schedule or favorite foods vs. ratings) with a header row.",
-      successChecklist: [
-        "Table renders correctly with visible rows and columns.",
+      "code": "<table>\n  <tr>\n    <th>Fact</th>\n    <th>Detail</th>\n  </tr>\n  <tr>\n    <td>First F1 World Championship race</td>\n    <td>1950</td>\n  </tr>\n</table>",
+      "literacyStrategy": {
+        "name": "Frayer Model",
+        "note": "'Table' non-examples (using a table to position text) stop students using tables for layout."
+      },
+      "task": "Add the F1 Quick Facts table (2 columns, header row plus 4 data rows) to the About Us page.",
+      "successChecklist": [
+        "Table renders with visible rows and columns.",
         "Header row uses <th>, data rows use <td>."
       ],
-      exitTicket: "'What's the difference between <th> and <td>?'",
-      notes: null
+      "exitTicket": "'What's the difference between <th> and <td>?'",
+      "notes": null
     },
     {
-      number: 2,
-      title: "Guided Practice: Multi-Column Tables",
-      duration: "60 min",
-      objective: "Build a correctly structured multi-row, multi-column table with teacher support.",
-      warmup: "Quick fix-it: show a table with a missing </tr> — students spot the error.",
-      main: [
-        "Teacher models building a larger table (3+ columns, 4+ rows) step by step, e.g. a comparison table of favorite movies/ratings/genres.",
-        "Checkpoint 1: students build the header row with 3+ <th> cells.",
-        "Checkpoint 2: students add 3+ data rows, keeping the same number of cells in every row.",
-        "Common error check: mismatched cell counts between rows (a very common table bug), unclosed <tr>/<td> tags."
+      "number": 2,
+      "title": "Guided Practice: The Famous Grand Prix Table",
+      "duration": "60 min",
+      "objective": "Build a correctly structured multi-column table on the F1 Home page with teacher support.",
+      "vocabulary": [],
+      "warmup": "Quick fix-it: show a table with a missing </tr>. Students spot the error.",
+      "main": [
+        "Teacher models planning a 3-column table: Grand Prix, Country, Circuit.",
+        "Checkpoint 1: students build the header row with 3 <th> cells.",
+        "Checkpoint 2: students add the 5 data rows, keeping 3 cells in every row.",
+        "Common error check: rows with the wrong number of cells, and unclosed <tr> or <td> tags."
       ],
-      code: "<table>\n  <tr>\n    <th>Movie</th>\n    <th>Genre</th>\n    <th>Rating</th>\n  </tr>\n  <tr>\n    <td>Movie A</td>\n    <td>Action</td>\n    <td>8/10</td>\n  </tr>\n  <tr>\n    <td>Movie B</td>\n    <td>Comedy</td>\n    <td>7/10</td>\n  </tr>\n</table>",
-      task: "Build a table with at least 3 columns and 4 rows (including the header) about a real topic of their choice, ensuring every row has the same number of cells.",
-      successChecklist: [
+      "code": "<table>\n  <tr>\n    <th>Grand Prix</th>\n    <th>Country</th>\n    <th>Circuit</th>\n  </tr>\n  <tr>\n    <td>Abu Dhabi</td>\n    <td>UAE</td>\n    <td>Yas Marina Circuit</td>\n  </tr>\n</table>",
+      "task": "Add the Famous Grand Prix table (3 columns, header row plus 5 data rows) to the Home page.",
+      "successChecklist": [
         "Every row has the same number of cells.",
-        "Table displays cleanly with no missing/misaligned data."
+        "Table displays cleanly with no missing or misaligned data."
       ],
-      exitTicket: "Screenshot check for a quick teacher review.",
-      notes: "Mismatched cell counts between rows is the #1 error this lesson — check row-by-row while circulating."
+      "exitTicket": "Screenshot check for a quick teacher review.",
+      "notes": "Mismatched cell counts between rows is the #1 error this lesson: check row by row while circulating."
     },
     {
-      number: 3,
-      title: "Independent Application: Data on Your Website",
-      duration: "60 min",
-      objective: "Independently decide where a table would present information more clearly than a list or paragraph, and build it correctly on their site.",
-      vocabulary: [
-        { term: "Colspan", definition: "An attribute on a table cell that makes it stretch across (merge with) multiple columns." }
+      "number": 3,
+      "title": "Independent Application: Contact Times Table",
+      "duration": "60 min",
+      "objective": "Independently build a table on the Contact Us page, with a title row that spans both columns.",
+      "vocabulary": [
+        {
+          "term": "Colspan",
+          "definition": "An attribute on a table cell that makes it stretch across (merge with) multiple columns."
+        }
       ],
-      warmup: "'What real data or comparison could you show on your own website using a table?' (e.g. skills vs. proficiency, a project timeline, favorite things ranked)",
-      main: [
-        "Students identify one piece of content on their own site that would be clearer as a table.",
-        "Independently plan the table's rows/columns before coding it (quick sketch or note).",
-        "Build and insert the table into their site, matching their earlier plan.",
-        "Stretch challenge: research and use the colspan attribute to merge cells for a table title row.",
+      "warmup": "'Look at your Contact Us page. What information would be clearer as a table than as a list?'",
+      "main": [
+        "Students plan the Contact Times table from the sheet: how many columns, how many rows?",
+        "Students build the table independently on the Contact Us page.",
+        "Stretch: add a title row using colspan=\"2\" so the title stretches across both columns.",
         "Teacher circulates for 1:1 support."
       ],
-      code: "<table>\n  <tr>\n    <th colspan=\"2\">My Skills</th>\n  </tr>\n  <tr>\n    <td>HTML</td>\n    <td>Beginner</td>\n  </tr>\n</table>",
-      task: "Add one purposeful, correctly structured table to their personal website that presents real content more clearly than text alone.",
-      successChecklist: [
-        "Table content is genuinely tabular data (not just paragraph text forced into cells).",
-        "Table is structurally correct and displays cleanly."
+      "code": "<table>\n  <tr>\n    <th colspan=\"2\">Contact Times</th>\n  </tr>\n  <tr>\n    <td>Monday to Thursday</td>\n    <td>8:00 to 15:00</td>\n  </tr>\n</table>",
+      "task": "Add the Contact Times table to the Contact Us page, with a header row and every row complete.",
+      "successChecklist": [
+        "The table holds real tabular data (days and times), not paragraph text.",
+        "The table is structurally correct and displays cleanly."
       ],
-      exitTicket: "None formal — informal circulation check.",
-      notes: null
+      "exitTicket": "None formal: informal circulation check.",
+      "notes": null
     },
     {
-      number: 4,
-      title: "Formative Assessment: Table Activity",
-      duration: "60 min",
-      objective: "Demonstrate correct, independent construction of a structured HTML table for the week's formative assessment.",
-      warmup: "Quick-fire: spot the bug in a table with a missing <td> in one row.",
-      main: [
-        "Explain the formative table activity and success criteria.",
-        "Students complete a table-building task independently (teacher-provided dataset to structure correctly, e.g. a small set of facts about the UAE for the National Identity link).",
-        "Teacher circulates and records evidence against the rubric.",
-        "Peer check: partners verify each other's table has consistent rows/columns and clear headers."
+      "number": 4,
+      "title": "Formative Assessment: Abu Dhabi Grand Prix Table",
+      "duration": "60 min",
+      "objective": "Independently build a correctly structured table from given data for the Week 8 formative.",
+      "vocabulary": [],
+      "warmup": "Quick-fire: spot the bug in a table with a missing <td> in one row.",
+      "main": [
+        "Explain the formative: build the Abu Dhabi Grand Prix facts table on the Vision and Mission page from the data on the Final Checklist.",
+        "Students build the table independently, then check it against the Final Checklist (Tables).",
+        "Students who are stuck compare their code with the Example Code sheet, one line at a time.",
+        "Peer check: partners verify consistent rows, clear headers and correct data, then students submit via Toddle."
       ],
-      code: null,
-      task: "Complete and submit the table activity: build a correctly structured table from the given dataset.",
-      successChecklist: [
+      "code": null,
+      "task": "Build the Abu Dhabi Grand Prix facts table on the Vision and Mission page and complete the Final Checklist (Tables).",
+      "successChecklist": [
         "Create structured tables.",
         "Organize data accurately.",
         "Display information clearly."
       ],
-      exitTicket: "'Name one website (real-world) where a table would genuinely be useful.'",
-      notes: "This lesson is the Week 8 formative checkpoint (Table activity) noted in the Scope & Sequence."
+      "exitTicket": "'Name one real website where a table would genuinely be useful.'",
+      "notes": "This lesson is the Week 8 formative checkpoint (Table activity) noted in the Scope & Sequence."
     }
-  ]
+  ],
+  "projectNote": "Week 8 continues the F1 website: each lesson adds a table to a different page; students write the code."
 });
