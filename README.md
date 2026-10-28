@@ -31,9 +31,9 @@ Arwa's classes meet 4x/week at 60 min each, but the school's Scope & Sequence gi
 - **Week 14 (Completion):** Debug → Peer Test → Rubric Review → Presentation Prep
 - **Week 15 (Presentation & Reflection):** Rehearse → Present → Present → Reflect
 
-Formative assessments (Weeks 3, 5, 9, 11) and the one official summative (Week 13, Personal Multi-Page Website Project, 100 pts) are built directly into the correct lesson slot and flagged with an amber badge at the top of that week.
+Formative assessments (Weeks 3, 5, 9, 11) and the one official summative (Personal Multi-Page Website Project, 100 pts, restructured Oct 2026 to finish in Week 12: built Weeks 10-11, submitted and presented Week 12, Week 13 L1-2 catch-up) are built directly into the correct lesson slot and flagged with an amber badge at the top of that week.
 
-**Note on the xlsx "Summative Assessments" column:** the scope-and-sequence spreadsheet labels a named project deliverable in most weeks from Week 9 onward (e.g. "Forms Task," "Website Design Task," "Website Development"). The syllabus's official grade book only lists **one** graded summative for this unit — the Week 13 Personal Multi-Page Website Project (100 pts). These per-week xlsx labels are treated here as informal milestone names for the ongoing project (folded into that week's lesson content/task), not as separate graded summatives, to avoid conflicting with the syllabus grading table.
+**Note on the xlsx "Summative Assessments" column:** the scope-and-sequence spreadsheet labels a named project deliverable in most weeks from Week 9 onward (e.g. "Forms Task," "Website Design Task," "Website Development"). The syllabus's official grade book only lists **one** graded summative for this unit — the Personal Multi-Page Website Project (100 pts, now due Week 12). These per-week xlsx labels are treated here as informal milestone names for the ongoing project (folded into that week's lesson content/task), not as separate graded summatives, to avoid conflicting with the syllabus grading table.
 
 ## Editing a week
 
