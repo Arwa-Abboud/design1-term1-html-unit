@@ -1,120 +1,92 @@
-// Week 13 — Nov 23 — Personal Website Refinement (Summative due: Personal Multi-Page Website Project, 100 pts)
+// Week 13: Nov 23: Catch-Up and National Day Celebrations (restructured: summative finished by Week 12)
 TERM1_WEEKS.push({
-  week: 13,
-  dates: "Nov 23",
-  status: "content",
-  topic: "Personal Website Refinement",
-  inquiryQuestion: "How well does the completed website meet the identified requirements and user needs?",
-  criterion: "Criterion D: Evaluating — D.i: Design detailed and relevant testing methods which generate data to measure the success of the solution.",
-  standard: "PG 7: Design and create programs, individually and collaboratively, for a variety of disciplines. (Computer Programming, GLE CS.HS.3.4 — Stakeholder-based design requirements and feedback are essential to a quality computational product or service.)",
-  weekObjectives: [
-    "Improve website quality.",
-    "Apply feedback.",
-    "Correct identified issues."
+  "week": 13,
+  "dates": "Nov 23",
+  "status": "content",
+  "topic": "Catch-Up and National Day Celebrations",
+  "inquiryQuestion": "How well does the completed website meet the identified requirements and user needs?",
+  "criterion": "Criterion D: Evaluating: D.i: Design detailed and relevant testing methods which generate data to measure the success of the solution.",
+  "standard": "PG 7: Design and create programs, individually and collaboratively, for a variety of disciplines. (Computer Programming, GLE CS.HS.3.4: Stakeholder-based design requirements and feedback are essential to a quality computational product or service.)",
+  "weekObjectives": [
+    "Complete any missing summative work.",
+    "Improve the website further (extension)."
   ],
-  successCriteria: [
-    "Refine webpage design.",
-    "Resolve errors.",
-    "Improve usability."
+  "successCriteria": [
+    "Submit any missing work.",
+    "Present if missed."
   ],
-  crossCurricular: "Design: Using feedback and iterative improvement to enhance products.",
-  nationalIdentity: "UAE Innovation Strategy",
-  formative: "Peer feedback (Lesson 2) - optional 10-pt rubric in the Rubrics tab",
-  summative: "Personal Multi-Page Website Project — 100 pts, Unit 1 Outcomes (due end of Lesson 4)",
-  lessons: [
+  "crossCurricular": "Design: Using feedback and iterative improvement to enhance products.",
+  "nationalIdentity": "UAE National Day (Eid Al Etihad) celebrations",
+  "formative": null,
+  "summative": "Catch-up only: late submissions and missed presentations for the Personal Multi-Page Website Project (Lessons 1-2)",
+  "lessons": [
     {
-      number: 1,
-      title: "Design Testing: Finding What's Broken",
-      duration: "60 min",
-      objective: "Design and apply testing methods (usability checks, link checks, cross-page consistency checks) to generate evidence of where the website still needs improvement.",
-      vocabulary: [
-        { term: "Usability", definition: "How easy and pleasant a website is to actually use for the people it's designed for." },
-        { term: "Testing", definition: "Deliberately checking a product against real use cases (not just 'does it work for me') to find problems before others do." }
+      "number": 1,
+      "title": "Catch-Up 1: Finish and Submit",
+      "duration": "60 min",
+      "objective": "Students who are behind or were absent finish and submit their website; others extend their site.",
+      "vocabulary": [],
+      "warmup": "Teacher shares the list: who still needs to submit, present or reflect.",
+      "main": [
+        "Catch-up group: finish the site, submit via Toddle, write the reflection.",
+        "Students who have finished: extension work (add a page, improve the form, add a second table) without changing the submitted version.",
+        "Teacher works 1:1 with the catch-up group."
       ],
-      warmup: "Explain: 'Testing' isn't just checking if it works for you — it's checking if it works for your target audience, deliberately trying to break things.",
-      main: [
-        "Mini-lecture: good testing is systematic, not random — e.g. a full navigation test (click every link from every page), a content test (read every page as your target audience would), a technical test (validate every image/table/form).",
-        "Model a simple testing checklist covering navigation, content, images, and forms.",
-        "Students design their own testing checklist tailored to their site's specific pages and features.",
-        "Students run their own testing checklist against their site and log every issue found."
+      "code": null,
+      "task": "Catch-up: submit any missing summative work. Finished: extension work on the website.",
+      "successChecklist": [
+        "All my summative work is submitted."
       ],
-      code: null,
-      task: "Create and run a personal testing checklist against their own website, logging every issue found (broken link, awkward wording, missing alt text, inconsistent navigation, etc.).",
-      successChecklist: [
-        "Testing checklist covers navigation, content, and technical accuracy.",
-        "Issues found are logged specifically enough to act on."
-      ],
-      exitTicket: "'How many issues did you find, and which one will you fix first?'",
-      notes: null
+      "exitTicket": null,
+      "notes": null
     },
     {
-      number: 2,
-      title: "Peer Feedback: Fresh Eyes",
-      duration: "60 min",
-      objective: "Give and receive structured peer feedback to identify usability issues the site's own creator might miss.",
-      warmup: "Quick pair-up and swap: 'You have 2 minutes to explore your partner's site before we start — first impressions only.'",
-      main: [
-        "Explain the peer feedback formative check (structured, not just 'looks good!') — use a feedback protocol (e.g. 2 things working well, 2 things to improve, 1 question), delivered using Accountable Talk stems.",
-        "Structured peer review in pairs or small groups using the protocol.",
-        "Students record all feedback received, separate from their own testing checklist from yesterday.",
-        "Teacher circulates during peer review to observe and support quieter groups."
+      "number": 2,
+      "title": "Catch-Up 2: Late Presentations",
+      "duration": "60 min",
+      "objective": "Students who missed presenting give their presentation; everyone else continues extension work.",
+      "vocabulary": [],
+      "warmup": "Order of late presentations on the board.",
+      "main": [
+        "Late presentations (2-3 minutes each), scored on the summative rubric.",
+        "Everyone else: extension work, or giving feedback on a classmate's finished site.",
+        "Teacher confirms every student's summative is complete."
       ],
-      code: null,
-      literacyStrategy: {
-        name: "Accountable Talk",
-        note: "Feedback protocol is delivered through stems like 'I noticed...', 'I'd suggest...', 'Can you explain why...?' — keeps peer feedback specific and actionable rather than a quick 'looks good!'"
-      },
-      task: "Give structured feedback to at least one peer's site and receive/record feedback on their own site using the class protocol.",
-      successChecklist: [
-        "Feedback given is specific and actionable, not just praise.",
-        "Feedback received is fully recorded for use in refinement."
+      "code": null,
+      "task": "Late presenters: present the website. Others: extension work.",
+      "successChecklist": [
+        "Every part of my summative is complete."
       ],
-      exitTicket: "'One piece of peer feedback that surprised you.'",
-      notes: "This lesson is the Week 13 formative checkpoint (Peer feedback) noted in the Scope & Sequence."
+      "exitTicket": null,
+      "notes": null
     },
     {
-      number: 3,
-      title: "Refinement Sprint: Fixing & Polishing",
-      duration: "60 min",
-      objective: "Apply both self-testing and peer feedback findings to resolve errors and improve the website's usability and design quality.",
-      warmup: "Prioritize: from your combined issue list (self-test + peer feedback), circle the top 5 to fix today.",
-      main: [
-        "Independent refinement sprint: students work through their prioritized issue list.",
-        "Teacher circulates for 1:1 troubleshooting support, prioritizing technical/broken issues over stylistic ones.",
-        "Mid-lesson checkpoint: how many of the top 5 issues are resolved?",
-        "Final consistency pass: navigation, headings, and formatting should be uniform across every page before submission tomorrow."
-      ],
-      code: null,
-      task: "Resolve as many logged issues as possible, prioritizing the top 5 identified at the start of the lesson.",
-      successChecklist: [
-        "Refine webpage design.",
-        "Resolve errors.",
-        "Improve usability."
-      ],
-      exitTicket: "'How many of your top 5 issues did you resolve today?'",
-      notes: null
+      "number": 3,
+      "title": "No lesson: National Day celebrations",
+      "duration": "-",
+      "objective": "No Design 1 lesson. National Day celebrations.",
+      "vocabulary": [],
+      "warmup": null,
+      "main": [],
+      "code": null,
+      "task": null,
+      "successChecklist": [],
+      "exitTicket": null,
+      "notes": null
     },
     {
-      number: 4,
-      title: "Summative Submission: Personal Multi-Page Website Project",
-      duration: "60 min",
-      objective: "Submit the completed, tested, and refined Personal Multi-Page Website Project for summative assessment against Unit 1 outcomes.",
-      warmup: "Final checklist run-through: navigation works, every page has content, images have alt text, forms function, design is consistent.",
-      main: [
-        "Remind students of the summative rubric and Academic Integrity expectations (shared in advance, per school policy).",
-        "Final independent polishing time for any last-minute fixes.",
-        "Guide students through the submission process on Toddle (file/link submission as per class convention).",
-        "Quick individual check-ins as students submit, confirming the submitted version is the final, working version.",
-        "Close the unit: celebrate progress from Week 1's 'Hello World' to a full multi-page personal website."
-      ],
-      code: null,
-      task: "Submit the final Personal Multi-Page Website Project (100 pts, Unit 1 Outcomes) via Toddle.",
-      successChecklist: [
-        "All pages complete, tested, and linked correctly.",
-        "Submission made on Toddle before the deadline."
-      ],
-      exitTicket: "'One thing you're proud of in your finished website.'",
-      notes: "This is the official graded summative assessment from the syllabus — Personal Multi-Page Website Project, 100 pts, due Week 13. This is the only formally graded summative in Unit 1 per the syllabus grading table."
+      "number": 4,
+      "title": "No lesson: National Day celebrations",
+      "duration": "-",
+      "objective": "No Design 1 lesson. National Day celebrations.",
+      "vocabulary": [],
+      "warmup": null,
+      "main": [],
+      "code": null,
+      "task": null,
+      "successChecklist": [],
+      "exitTicket": null,
+      "notes": null
     }
   ]
 });

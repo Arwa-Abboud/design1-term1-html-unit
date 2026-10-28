@@ -3,7 +3,7 @@
 var RUBRICS = {
   summative: {
     title: "Personal Multi-Page Website Project",
-    subtitle: "Summative Assessment — Due Week 13 — 100 points — Unit 1 Outcomes",
+    subtitle: "Summative Assessment: Due Week 12: 100 points: Unit 1 Outcomes",
     points: 100,
     categories: [
       {
@@ -80,142 +80,275 @@ var RUBRICS = {
   },
   formatives: [
     {
-      week: "1",
-      title: "My First HTML File (Optional)",
-      points: 10,
-      optional: true,
-      categories: [
-        { name: "File saved correctly", points: 4, description: "The file is saved as index.html in the right folder and opens from there." },
-        { name: "Title and paragraph", points: 3, description: "The page has a title and at least one paragraph introducing the student." },
-        { name: "Displays in the browser", points: 3, description: "The page opens and displays correctly in the browser." }
+      "week": "1",
+      "title": "My First HTML File (Optional)",
+      "points": 10,
+      "optional": true,
+      "categories": [
+        {
+          "name": "File saved correctly",
+          "points": 4,
+          "description": "The file is saved as index.html in the right folder and opens from there."
+        },
+        {
+          "name": "Title and paragraph",
+          "points": 3,
+          "description": "The page has a title and at least one paragraph introducing the student."
+        },
+        {
+          "name": "Displays in the browser",
+          "points": 3,
+          "description": "The page opens and displays correctly in the browser."
+        }
       ]
     },
     {
-      week: "2",
-      title: "HTML Structure Check (Optional)",
-      points: 10,
-      optional: true,
-      categories: [
-        { name: "Valid document structure", points: 4, description: "All 5 core tags (<!DOCTYPE html>, html, head, title, body) are present and in the right order." },
-        { name: "Correct tag use and nesting", points: 3, description: "Tags are opened, closed and nested correctly, with content in the body." },
-        { name: "Displays successfully", points: 3, description: "The page displays in the browser with no visible errors." }
+      "week": "2",
+      "title": "HTML Structure Check (Optional)",
+      "points": 10,
+      "optional": true,
+      "categories": [
+        {
+          "name": "Valid document structure",
+          "points": 4,
+          "description": "All 5 core tags (<!DOCTYPE html>, html, head, title, body) are present and in the right order."
+        },
+        {
+          "name": "Correct tag use and nesting",
+          "points": 3,
+          "description": "Tags are opened, closed and nested correctly, with content in the body."
+        },
+        {
+          "name": "Displays successfully",
+          "points": 3,
+          "description": "The page displays in the browser with no visible errors."
+        }
       ]
     },
     {
-      week: "3",
-      title: "HTML Structure & Text Formatting Activities",
-      points: 10,
-      categories: [
-        { name: "Valid HTML document structure (Weeks 1-2)", points: 3, description: "File is saved and named correctly; uses a valid DOCTYPE/html/head/body structure with correct nesting — carried over from Weeks 1-2, not just this week's new content." },
-        { name: "Correct use of text formatting tags (Week 3)", points: 4, description: "Headings, paragraphs, <strong>, and <em> are used correctly and appropriately." },
-        { name: "Logical organization & readability", points: 3, description: "Content follows a clear heading hierarchy with no skipped or misused levels, and the finished page is genuinely easier to read/skim than plain unformatted text." }
+      "week": "3",
+      "title": "HTML Structure & Text Formatting Activities",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Valid HTML document structure (Weeks 1-2)",
+          "points": 3,
+          "description": "File is saved and named correctly; uses a valid DOCTYPE/html/head/body structure with correct nesting — carried over from Weeks 1-2, not just this week's new content."
+        },
+        {
+          "name": "Correct use of text formatting tags (Week 3)",
+          "points": 4,
+          "description": "Headings, paragraphs, <strong>, and <em> are used correctly and appropriately."
+        },
+        {
+          "name": "Logical organization & readability",
+          "points": 3,
+          "description": "Content follows a clear heading hierarchy with no skipped or misused levels, and the finished page is genuinely easier to read/skim than plain unformatted text."
+        }
       ]
     },
     {
-      week: "4",
-      title: "Lists in Context (Optional)",
-      points: 10,
-      optional: true,
-      categories: [
-        { name: "Lists built correctly", points: 4, description: "ul/ol and li tags are used and closed correctly, including any nested list." },
-        { name: "Appropriate list type", points: 3, description: "Ordered lists are used where order matters and unordered lists where it does not." },
-        { name: "Information presented clearly", points: 3, description: "The content is clearer as a list than it was as a paragraph." }
+      "week": "4",
+      "title": "Lists in Context (Optional)",
+      "points": 10,
+      "optional": true,
+      "categories": [
+        {
+          "name": "Lists built correctly",
+          "points": 4,
+          "description": "ul/ol and li tags are used and closed correctly, including any nested list."
+        },
+        {
+          "name": "Appropriate list type",
+          "points": 3,
+          "description": "Ordered lists are used where order matters and unordered lists where it does not."
+        },
+        {
+          "name": "Information presented clearly",
+          "points": 3,
+          "description": "The content is clearer as a list than it was as a paragraph."
+        }
       ]
     },
     {
-      week: "5-6",
-      title: "Hyperlinks, Images & Tables Activities",
-      points: 10,
-      categories: [
-        { name: "Working hyperlinks & navigation", points: 4, description: "All links (internal and external) work correctly; navigation connects the pages built so far." },
-        { name: "Correct image implementation", points: 3, description: "Images display correctly with appropriate size and meaningful alt text." },
-        { name: "Overall appearance & polish", points: 3, description: "Navigation and images are placed thoughtfully and improve the page rather than cluttering it." }
+      "week": "5-6",
+      "title": "Hyperlinks, Images & Tables Activities",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Working hyperlinks & navigation",
+          "points": 4,
+          "description": "All links (internal and external) work correctly; navigation connects the pages built so far."
+        },
+        {
+          "name": "Correct image implementation",
+          "points": 3,
+          "description": "Images display correctly with appropriate size and meaningful alt text."
+        },
+        {
+          "name": "Overall appearance & polish",
+          "points": 3,
+          "description": "Navigation and images are placed thoughtfully and improve the page rather than cluttering it."
+        }
       ]
     },
     {
-      week: "8",
-      title: "F1 Tables: Abu Dhabi Grand Prix Table (Optional)",
-      points: 10,
-      optional: true,
-      categories: [
-        { name: "Structured table", points: 4, description: "The table uses table, tr, th and td correctly, with a header row of th cells." },
-        { name: "Accurate, complete data", points: 3, description: "Every row has the right number of cells and the data matches the given facts." },
-        { name: "Displayed clearly", points: 3, description: "All four F1 tables display cleanly on their pages, with no misaligned cells." }
+      "week": "8",
+      "title": "F1 Tables: Abu Dhabi Grand Prix Table (Optional)",
+      "points": 10,
+      "optional": true,
+      "categories": [
+        {
+          "name": "Structured table",
+          "points": 4,
+          "description": "The table uses table, tr, th and td correctly, with a header row of th cells."
+        },
+        {
+          "name": "Accurate, complete data",
+          "points": 3,
+          "description": "Every row has the right number of cells and the data matches the given facts."
+        },
+        {
+          "name": "Displayed clearly",
+          "points": 3,
+          "description": "All four F1 tables display cleanly on their pages, with no misaligned cells."
+        }
       ]
     },
     {
-      week: "9",
-      title: "HTML Forms & Navigation Activities",
-      points: 10,
-      categories: [
-        { name: "Functional form", points: 4, description: "The form submits/behaves correctly with appropriate input types for the data being collected." },
-        { name: "Correct form element labeling", points: 3, description: "Every input has a correctly linked label (for/id match)." },
-        { name: "Navigation integration", points: 3, description: "The form is reachable through the site's working navigation menu." }
+      "week": "9",
+      "title": "HTML Forms & Navigation Activities",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Functional form",
+          "points": 4,
+          "description": "The form submits/behaves correctly with appropriate input types for the data being collected."
+        },
+        {
+          "name": "Correct form element labeling",
+          "points": 3,
+          "description": "Every input has a correctly linked label (for/id match)."
+        },
+        {
+          "name": "Navigation integration",
+          "points": 3,
+          "description": "The form is reachable through the site's working navigation menu."
+        }
       ]
     },
     {
-      week: "10",
-      title: "Website Design Task (Optional)",
-      points: 10,
-      optional: true,
-      categories: [
-        { name: "Elements integrated correctly", points: 4, description: "The new page combines at least 4 different HTML element types, all working." },
-        { name: "Complete, linked page", points: 3, description: "The page is complete and reachable from the site's navigation menu." },
-        { name: "Technical accuracy", points: 3, description: "No broken tags, links or images on the page." }
+      "week": "10",
+      "title": "Build Milestone Check (Optional)",
+      "points": 10,
+      "optional": true,
+      "categories": [
+        {
+          "name": "Design specification",
+          "points": 3,
+          "description": "Topic, purpose, target audience, a site map of at least 4 pages and 3 success criteria."
+        },
+        {
+          "name": "Pages and navigation",
+          "points": 4,
+          "description": "Every page in the site map exists with a correct skeleton and an identical, working menu."
+        },
+        {
+          "name": "Content started",
+          "points": 3,
+          "description": "Text, at least 2 images with alt text and a table have been added."
+        }
       ]
     },
     {
-      week: "11",
-      title: "Website Prototype Review",
-      points: 10,
-      categories: [
-        { name: "Multi-page site exists", points: 4, description: "All pages from the design specification's site map exist and contain real content." },
-        { name: "Effective navigation", points: 3, description: "Navigation is consistent and every page is reachable from every other page." },
-        { name: "Consistent design", points: 3, description: "Pages share a consistent look and structure, matching the student's own design specification." }
+      "week": "11",
+      "title": "Website Prototype Review",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Multi-page site exists",
+          "points": 4,
+          "description": "All pages from the design specification's site map exist and contain real content."
+        },
+        {
+          "name": "Effective navigation",
+          "points": 3,
+          "description": "Navigation is consistent and every page is reachable from every other page."
+        },
+        {
+          "name": "Consistent design",
+          "points": 3,
+          "description": "Pages share a consistent look and structure, matching the student's own design specification."
+        }
       ]
     },
     {
-      week: "12",
-      title: "Website Development Conference (Optional)",
-      points: 10,
-      optional: true,
-      categories: [
-        { name: "Original content", points: 4, description: "Every page in the site map has real, original content (no placeholder text)." },
-        { name: "HTML applied accurately", points: 3, description: "Structure, formatting, links, images and tables follow correct HTML conventions." },
-        { name: "Effective organization", points: 3, description: "Navigation, headings and layout are consistent across all pages." }
+      "week": "12",
+      "title": "Testing Checklist (Optional)",
+      "points": 10,
+      "optional": true,
+      "categories": [
+        {
+          "name": "Systematic testing",
+          "points": 4,
+          "description": "Every page, link, image, table and form field was tested and logged."
+        },
+        {
+          "name": "Issues fixed",
+          "points": 3,
+          "description": "Logged issues were fixed, most important first."
+        },
+        {
+          "name": "Rubric self-check",
+          "points": 3,
+          "description": "The student checked the site against each summative category."
+        }
       ]
     },
     {
-      week: "13",
-      title: "Peer Feedback (Optional)",
-      points: 10,
-      optional: true,
-      categories: [
-        { name: "Specific feedback given", points: 4, description: "Feedback to a peer is specific and actionable, not just praise." },
-        { name: "Feedback recorded", points: 3, description: "Feedback received is fully recorded for use in refinement." },
-        { name: "Issues logged and prioritized", points: 3, description: "The student's own testing log lists issues clearly and marks the top priorities." }
+      "week": "14",
+      "title": "HTML Revision Quiz (Optional)",
+      "points": 10,
+      "optional": true,
+      "categories": [
+        {
+          "name": "Tag purposes",
+          "points": 4,
+          "description": "Correctly explains what the term's key tags do."
+        },
+        {
+          "name": "Spot the bug",
+          "points": 3,
+          "description": "Finds and fixes errors in short code snippets."
+        },
+        {
+          "name": "Vocabulary",
+          "points": 3,
+          "description": "Uses the term's vocabulary accurately."
+        }
       ]
     },
     {
-      week: "14",
-      title: "Project Review Against the Rubric (Optional)",
-      points: 10,
-      optional: true,
-      categories: [
-        { name: "Honest self-assessment", points: 4, description: "The student assesses their site against every summative category with evidence." },
-        { name: "Critical issues fixed", points: 3, description: "All broken links, images or pages found after submission are fixed." },
-        { name: "Presentation notes", points: 3, description: "Notes cover purpose, audience, a demo plan, impact and one area for improvement." }
-      ]
-    },
-    {
-      week: "15",
-      title: "Unit Reflection (Optional)",
-      points: 10,
-      optional: true,
-      categories: [
-        { name: "Target-audience effectiveness", points: 4, description: "Explains how well the website meets its audience's needs, with examples." },
-        { name: "Strengths and improvements", points: 3, description: "Names real strengths and a genuine area for improvement." },
-        { name: "Next steps", points: 3, description: "Sets a clear, specific next step for future web design work." }
+      "week": "15",
+      "title": "Spot the Bug Challenge (Optional)",
+      "points": 10,
+      "optional": true,
+      "categories": [
+        {
+          "name": "Bugs found",
+          "points": 4,
+          "description": "Finds the error in each snippet."
+        },
+        {
+          "name": "Bugs fixed",
+          "points": 3,
+          "description": "Each fix is correct and the code works."
+        },
+        {
+          "name": "Explanation",
+          "points": 3,
+          "description": "Explains in one sentence why each bug breaks the page."
+        }
       ]
     }
   ]

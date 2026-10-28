@@ -1,116 +1,137 @@
-// Week 10 — Nov 2 — Combining HTML Elements
+// Week 10: Nov 2: Summative Project: Plan and Start Building (restructured: summative finished by Week 12)
 TERM1_WEEKS.push({
-  week: 10,
-  dates: "Nov 2",
-  status: "content",
-  topic: "Combining HTML Elements",
-  inquiryQuestion: "How can several webpages be connected into a coherent and user-friendly website?",
-  criterion: "Criterion C: Creating the Solution — C.i: Construct a logical plan which describes the efficient use of time and resources sufficient for peers to be able to follow to create the solution.",
-  standard: "PG 7: Design and create programs, individually and collaboratively, for a variety of disciplines. (Computer Programming, GLE CS.HS.3.2 — Computational artifacts can be modified and improved through an iterative design process.)",
-  weekObjectives: [
-    "Combine text, images, tables and forms.",
-    "Build complete webpages.",
+  "week": 10,
+  "dates": "Nov 2",
+  "status": "content",
+  "topic": "Summative Project: Plan and Start Building",
+  "inquiryQuestion": "How can a website be designed to meet the needs of a specific target audience?",
+  "criterion": "Criterion B: Developing Ideas - B.i: Develop a design specification. Criterion C: Creating the Solution - C.i: Construct a logical plan.",
+  "standard": "PG 7: Design and create programs, individually and collaboratively, for a variety of disciplines. (Computer Programming, GLE CS.HS.3.2: Computational artifacts can be modified and improved through an iterative design process.)",
+  "weekObjectives": [
+    "Plan a personal website for a target audience.",
+    "Set up every page with consistent navigation.",
+    "Start building content, images and a table."
+  ],
+  "successCriteria": [
+    "Write a clear design specification and site map.",
+    "Create linked pages that match the site map.",
     "Apply HTML skills independently."
   ],
-  successCriteria: [
-    "Integrate HTML elements correctly.",
-    "Create complete webpages.",
-    "Demonstrate technical accuracy."
-  ],
-  crossCurricular: "Design: Applying design principles to create functional digital products.",
-  nationalIdentity: "UAE Smart Government",
-  formative: "Teacher review — deliverable milestone: Website Design Task (Lesson 4) - optional 10-pt rubric in the Rubrics tab",
-  summative: null,
-  lessons: [
+  "crossCurricular": "Design: Applying design principles to create functional digital products.",
+  "nationalIdentity": "UAE Smart Government",
+  "formative": "Build Milestone Check (Lesson 4) - optional 10-pt rubric in the Rubrics tab",
+  "summative": null,
+  "lessons": [
     {
-      number: 1,
-      title: "Planning a Complete Page: Design Task",
-      duration: "60 min",
-      objective: "Construct a logical plan that combines text, images, lists, tables, and forms into one coherent webpage layout.",
-      vocabulary: [
-        { term: "Wireframe", definition: "A simple sketch or diagram showing where each piece of content will go on a page, made before writing any code." },
-        { term: "Iterative Design", definition: "A design process where you build something, test/get feedback, and improve it in repeated rounds rather than getting it perfect the first time." }
+      "number": 1,
+      "title": "Project Launch: Design Specification and Site Map",
+      "duration": "60 min",
+      "objective": "Understand the summative brief and rubric, choose a website topic, and write a design specification with a site map.",
+      "vocabulary": [
+        {
+          "term": "Design Specification",
+          "definition": "A written plan of what a product must do and include, used to judge if it succeeds."
+        },
+        {
+          "term": "Target Audience",
+          "definition": "The specific group of people a website is made for."
+        },
+        {
+          "term": "Site Map",
+          "definition": "A list or diagram of every page in a website and how they connect."
+        },
+        {
+          "term": "Wireframe",
+          "definition": "A simple sketch of a page layout showing what goes where, without final content."
+        }
       ],
-      warmup: "Show a well-designed real webpage and ask students to point out every element type they've learned so far (headings, paragraphs, lists, links, images, tables, forms).",
-      main: [
-        "Mini-lecture: real webpages rarely use just one element type — good design combines them logically so a page reads clearly for a specific audience.",
-        "Introduce the 'Website Design Task': students will plan a new content page (e.g. a 'My Interests' or 'Portfolio' page) that intentionally combines at least 4 of the element types learned so far.",
-        "Model planning: sketch a simple wireframe (boxes labeled heading/image/list/table) before writing any code — this is the logical plan required by Criterion C.i.",
-        "Discuss iterative design: today's plan can and should change once building starts — that's normal, not a failure."
+      "warmup": "Show two real websites made for very different audiences (e.g. a kids' game site and a bank). 'Who is each one for? How can you tell?'",
+      "main": [
+        "Introduce the summative: students build their OWN multi-page website on a topic they choose, using everything practised on the F1 site.",
+        "Walk through the 100-pt rubric category by category and show the timeline: build in Weeks 10-11, submit and present in Week 12.",
+        "Students choose a topic (a hobby, a sport, a UAE place, a favourite subject, a club) and a target audience.",
+        "Students write the design specification: purpose, target audience, site map (at least 4 pages) and 3 success criteria.",
+        "Quick wireframe sketch of the Home page."
       ],
-      code: null,
-      task: "Sketch a wireframe/plan (paper or digital) for a new content page that will combine at least 4 different HTML element types, labeling what goes where and why.",
-      successChecklist: [
-        "Plan clearly shows at least 4 different element types being combined.",
-        "Plan explains the reasoning behind the layout, not just what's included."
+      "code": null,
+      "literacyStrategy": {
+        "name": "Frayer Model",
+        "note": "Frayer Model for Target Audience: definition, characteristics, example, non-example."
+      },
+      "task": "Complete the design specification (topic, purpose, target audience, site map of at least 4 pages, 3 success criteria) and a Home page wireframe.",
+      "successChecklist": [
+        "My site map has at least 4 pages with clear names.",
+        "My target audience is specific, not 'everyone'."
       ],
-      exitTicket: "'What's the riskiest/trickiest part of your plan to actually build?'",
-      notes: null
+      "exitTicket": "Who is your website for, and what is one page they will find useful?",
+      "notes": null
     },
     {
-      number: 2,
-      title: "Guided Build: Bringing the Plan to Life",
-      duration: "60 min",
-      objective: "Begin building the planned page, combining multiple HTML element types correctly with teacher support.",
-      warmup: "Pair up and explain your wireframe plan to a partner in 60 seconds.",
-      main: [
-        "Teacher models translating a wireframe into real HTML, section by section, showing how each planned element becomes code.",
-        "Checkpoint 1: students create the new HTML file and add the structural skeleton + heading(s) from their plan.",
-        "Checkpoint 2: students add the next 2 planned elements (e.g. image + list, or table + form).",
-        "Teacher circulates to keep students building toward their own plan rather than copying the demo exactly."
+      "number": 2,
+      "title": "Set Up the Site: Pages, Skeletons and Navigation",
+      "duration": "60 min",
+      "objective": "Create every page from the site map with a correct skeleton and an identical navigation menu, and test every link.",
+      "vocabulary": [],
+      "warmup": "Fix-it: show a menu with one broken link (wrong file name). 'Why does this link fail?'",
+      "main": [
+        "Students create a project folder and one .html file per page in their site map (index.html for Home).",
+        "Each page gets the full skeleton, a <title>, an <h1> and the same navigation menu.",
+        "Link test: click every menu link from every page, both directions.",
+        "Teacher checks each student's file names and folder before they move on."
       ],
-      code: "<h1>My Portfolio</h1>\n<img src=\"images/project1.jpg\" alt=\"Screenshot of my first HTML project\" width=\"300\">\n<ul>\n  <li>Project 1: Personal Homepage</li>\n  <li>Project 2: Contact Form</li>\n</ul>",
-      task: "Build the first half of their planned page, implementing at least 2 of the planned element types correctly.",
-      successChecklist: [
-        "New page file created and linked into site navigation.",
-        "At least 2 planned element types are implemented correctly."
+      "code": null,
+      "task": "Create all pages from the site map with skeletons and an identical navigation menu, then test every link.",
+      "successChecklist": [
+        "Every page in my site map exists.",
+        "Every menu link works from every page."
       ],
-      exitTicket: "Compare progress to plan: what's on track, what's changed?",
-      notes: null
+      "exitTicket": "Show your teacher one link test: start on any page and reach every other page.",
+      "notes": null
     },
     {
-      number: 3,
-      title: "Independent Build: Completing the Page",
-      duration: "60 min",
-      objective: "Independently complete the combined-elements page, integrating all planned components into one coherent, working page.",
-      warmup: "Quick self-check: what's left to build from yesterday's plan?",
-      main: [
-        "Students independently complete the remaining planned elements on their new page.",
-        "Ensure every element serves the page's actual purpose (no elements added 'just to tick a box').",
-        "Cross-check that the page is reachable from the site's main navigation menu.",
-        "Stretch challenge: add one element type not in the original plan if it genuinely improves the page.",
-        "Teacher circulates for 1:1 troubleshooting as different students hit different technical issues."
+      "number": 3,
+      "title": "Build Sprint 1: Text Content",
+      "duration": "60 min",
+      "objective": "Build the text content of the Home page and at least one other page with headings, paragraphs, lists and formatting.",
+      "vocabulary": [],
+      "warmup": "'Which tags from this term organise text?' Quick list on the board: h1-h6, p, strong, em, ul, ol, li.",
+      "main": [
+        "Set the sprint goal: Home plus one more page with real, original content.",
+        "Students write their own content (no copying from websites) and structure it with headings, paragraphs and at least one list.",
+        "Mid-lesson check: heading levels in order, no skipped levels.",
+        "Teacher circulates for 1:1 support."
       ],
-      code: null,
-      task: "Finish building the planned page so it combines at least 4 HTML element types correctly and is linked into the site's navigation.",
-      successChecklist: [
-        "Page combines 4+ element types, all functioning correctly.",
-        "Page is reachable via the main navigation menu."
+      "code": null,
+      "task": "Write and structure the content for Home and at least one other page using headings, paragraphs, a list and strong/em.",
+      "successChecklist": [
+        "My headings are in a logical order.",
+        "At least 2 pages have real content."
       ],
-      exitTicket: "None formal — informal circulation check.",
-      notes: null
+      "exitTicket": "Which page is next, and what content will it have?",
+      "notes": "AI text/code generation not permitted per Academic Integrity Policy: content must be the student's own."
     },
     {
-      number: 4,
-      title: "Teacher Review: Website Design Task",
-      duration: "60 min",
-      objective: "Present the completed combined-elements page for teacher review against Criterion C (technical accuracy and following the plan).",
-      warmup: "Quick peer walkthrough: show a partner your finished page and narrate what each element is doing.",
-      main: [
-        "One-on-one or small-group teacher review conferences: each student walks the teacher through their page, referencing their original wireframe plan.",
-        "Teacher gives immediate verbal feedback tied to the success criteria while other students continue polishing/fixing based on peer feedback.",
-        "Students log one specific improvement to make before next week based on today's feedback.",
-        "Preview next week's topic: Multi-Page Websites — this page becomes one part of a bigger connected site."
+      "number": 4,
+      "title": "Build Sprint 2: Images and a Table",
+      "duration": "60 min",
+      "objective": "Add images with meaningful alt text and at least one table of real data to the website.",
+      "vocabulary": [],
+      "warmup": "'What makes alt text useful?' Compare alt=\"image\" with alt=\"Burj Khalifa at night\".",
+      "main": [
+        "Students add at least 2 images to an images folder and insert them with src, alt and a sensible width.",
+        "Students add at least one table with a header row and real data that fits their topic.",
+        "Students finish the text content on any page still empty.",
+        "Build Milestone Check: teacher checks the spec, pages, navigation and progress (optional 10-pt rubric)."
       ],
-      code: null,
-      task: "Complete the teacher review conference and record one concrete improvement to make to the page.",
-      successChecklist: [
-        "Integrate HTML elements correctly.",
-        "Create complete webpages.",
-        "Demonstrate technical accuracy."
+      "code": null,
+      "task": "Add at least 2 images with alt text and 1 table of real data, then complete the Build Milestone Check.",
+      "successChecklist": [
+        "My images display and have meaningful alt text.",
+        "My table has a header row and real data."
       ],
-      exitTicket: "'One specific thing you'll improve on this page before it's graded.'",
-      notes: "This lesson delivers the Website Design Task deliverable and its teacher-review formative checkpoint noted in the Scope & Sequence."
+      "exitTicket": "What is the biggest thing still missing from your site?",
+      "notes": null
     }
-  ]
+  ],
+  "projectNote": "Summative: Personal Multi-Page Website Project, 100 pts. Students build their OWN website on a topic they choose (at least 4 linked pages, text formatting, lists, images, a table and a form), using everything practised on the F1 website."
 });
